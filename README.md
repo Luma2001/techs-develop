@@ -10,9 +10,9 @@ funcionalidades básicas incluye.
 
 | Nombre y Apellido | Link perfil Github |
 | :--- | :--- |
-| **Natalia Burnazzi** | **github** |
+| **Natalia Burnazzi** | **[github](https://github.com/NatyBu26)** |
 | **Leandro Rocha** | **[github](https://github.com/Lean-R)** |
-| **Daniel Clementín** | **github** |
+| **Daniel Clementín** | **[github](https://github.com/danielclementin)** |
 | **Luciana Quilcate** | **[github](https://github.com/Luma2001)** | 
 
 ## Tecnologías Utilizadas
