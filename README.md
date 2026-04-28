@@ -1,10 +1,9 @@
-# Techs Develop - Desarrollo de Sistemas Web (Front End) - 2° D
-## TP Grupal N°1 - Grupo N°1
+# Desarrollo de Sistemas Web (Front End) - 2° D
+## TP Grupal N°1 - Grupo N°1: "The Coffee-Code Engine"
 ## Link del deploy
 
 ## Descripción del Proyecto
-Un párrafo breve explicando de qué se trata el trabajo práctico, cuál es su objetivo y qué
-funcionalidades básicas incluye.
+La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Agencia de Desarrollo de Software que opera bajo la lógica y estética de una Cafetería de Especialidad. Se busca fusionar el rigor técnico (interfaces de terminal, sintaxis de código) con el humor centrado en la cultura "dev" (dependencia a la cafeína, resolución de bugs y jerga técnica).
 
 ## Integrantes
 
@@ -21,6 +20,7 @@ funcionalidades básicas incluye.
 | :--- | :--- | :--- | :--- |
 
 
+
 ## Estructura de Archivos
 
 ```
@@ -34,14 +34,21 @@ funcionalidades básicas incluye.
 ├── data/
 ├── img/
 ├── js/  
+│   └── index.js 
 ├── index.html
 └── README.md
 ```
 
 
 ## Guía de Estilos
-- **Paleta de Colores:** Listado de códigos Hexadecimales (#000000) para fondos, textos y acentos.
-- **Tipografías:** Especificar fuentes de Google Fonts para títulos y cuerpo (con links).
+- **Paleta de Colores:** 
+    - *Fondo Principal*: #1A1A1A (Negro "Obsidiana" o Carbono).
+    - *Texto Principal*: #F5F5DC (Beige / Crema de café).
+    - *Acento Primario*: #D2691E (Naranja "Chocolate" / Tostado).
+    - *Acento Secundario*: #00FF41 (Verde "Matrix" para estados OK).
+- **Tipografías:** 
+  - *Títulos y Código*: Space Mono o JetBrains Mono.
+  - *Cuerpo de Texto*: Roboto o Inter.
 - **Iconografía:** Mencionar librería utilizada (ej. FontAwesome) y confirmar el uso de avatares/IA
 para privacidad.
 
