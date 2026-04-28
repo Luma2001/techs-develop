@@ -1,0 +1,34 @@
+
+@import url(./header.css);
+@import url(./nav.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+
+
+:root{
+    --font: "Roboto", sans-serif;
+    --font-orbitron: "Orbitron", sans-serif;
+    --color-blanco:whitesmoke;
+    --color-gris: #343434;
+    --color-fondo:#000;
+    /* acá definimos las variables globales de color y 
+    las fuentes seleccionadas */
+}
+
+html{
+	scroll-behavior: smooth;
+    font-family: var(--font);
+    background: var(--color-fondo);
+
+    a {
+        text-decoration: none;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*como va a calcular el tamaño del elemento, en el width y height que le demos va a incluir a las medidas de su margin y padding*/
+}
+

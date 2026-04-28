@@ -23,8 +23,22 @@ funcionalidades básicas incluye.
 
 ## Estructura de Archivos
 
-Breve descripción de la organización de archivos y carpetas del proyecto (por ejemplo:
-index.html en raíz, CSS en carpeta css, imágenes en img, etc.).
+```
+.
+├── css/
+│   ├── styles.css                
+│   ├── footer.css            
+│   ├── hearder.css
+│   ├── main.css            
+│   └── nav.css            
+├── data/
+├── img/
+├── js/  
+├── pages/
+├── index.html
+└── README.md
+```
+
 
 ## Guía de Estilos
 Paleta de Colores: Listado de códigos Hexadecimales (#000000) para fondos, textos y acentos.
