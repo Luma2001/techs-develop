@@ -1,5 +1,5 @@
 # Techs Develop - Desarrollo de Sistemas Web (Front End) - 2° D
-## TP Grupal N°1 
+## TP Grupal N°1 - Grupo N°1
 ## Link del deploy
 
 ## Descripción del Proyecto
@@ -34,33 +34,33 @@ funcionalidades básicas incluye.
 ├── data/
 ├── img/
 ├── js/  
-├── pages/
 ├── index.html
 └── README.md
 ```
 
 
 ## Guía de Estilos
-Paleta de Colores: Listado de códigos Hexadecimales (#000000) para fondos, textos y acentos.
-Tipografías: Especificar fuentes de Google Fonts para títulos y cuerpo (con links).
-Iconografía: Mencionar librería utilizada (ej. FontAwesome) y confirmar el uso de avatares/IA
+- **Paleta de Colores:** Listado de códigos Hexadecimales (#000000) para fondos, textos y acentos.
+- **Tipografías:** Especificar fuentes de Google Fonts para títulos y cuerpo (con links).
+- **Iconografía:** Mencionar librería utilizada (ej. FontAwesome) y confirmar el uso de avatares/IA
 para privacidad.
 
 ## JavaScript
-Indicar las funciones dinámicas implementadas en la portada y en cada página individual,
+- Indicar las funciones dinámicas implementadas en la portada y en cada página individual,
 describiendo brevemente qué hacen y en qué sección se encuentran.
-Incluyendo capturas de pantalla.
-Enlace al Proyecto Desplegado
-Indicar el link de publicación en Vercel.
+- Incluyendo capturas de pantalla.
+- Enlace al Proyecto Desplegado
+- Indicar el link de publicación en Vercel.
 
 ## Uso de IA
 
-detallar las herramientas de Inteligencia Artificial utilizadas en el proceso:
-Herramientas: Listado de aplicación y modelos usados (ej. Gemini, ChatGPT, Copilot).
-Uso en Contenido y Código: Explicar qué textos se generaron y en qué problemas de lógica o
+Detallar las herramientas de Inteligencia Artificial utilizadas en el proceso:
+
+- **Herramientas:** Listado de aplicación y modelos usados (ej. Gemini, ChatGPT, Copilot).
+- **Uso en Contenido y Código:** Explicar qué textos se generaron y en qué problemas de lógica o
 debugging de JS/CSS ayudó la IA.
-Imágenes: Especificar el modelo y criterio de prompt para los avatares/ilustraciones.
-Nota: Se evaluará la capacidad del equipo para integrar la IA como asistente técnico y creativo,
+- **Imágenes:** Especificar el modelo y criterio de prompt para los avatares/ilustraciones.
+- *Nota:* Se evaluará la capacidad del equipo para integrar la IA como asistente técnico y creativo,
 manteniendo la autoría del proyecto.
 
 
