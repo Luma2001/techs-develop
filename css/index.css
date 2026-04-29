@@ -87,14 +87,26 @@ body.default {
 
 /* Columna Izquierda */
 .hero-content {
-  max-width: 500px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.hero-logo-container {
+  flex: 0 0 auto;
+}
+
+.hero-text-container {
+  flex: 1 1 auto;
+  min-width: 250px;
 }
 
 .hero-logo {
   width: 250px;
   height: 250px;
   border-radius: 20%;
-  margin-bottom: 1.5em;
   border: 2px solid var(--color-acento-primario);
 }
 
@@ -139,15 +151,22 @@ body.default {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    text-align: center;
     gap: 2em;
   }
 
   .hero-content {
-    order: 1; /* El logo y texto arriba */
-    display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .hero-logo-container {
+    flex: 1 1 100%;
+  }
+
+  .hero-text-container {
+    flex: 1 1 100%;
   }
 
   .hero-visual {
