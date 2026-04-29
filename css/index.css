@@ -8,14 +8,16 @@ body.default {
 
 .terminal {
   background: var(--color-fondo-principal-80);
-  width: fit-content;
-  min-width: 400px;
-  max-width: 100%;
+  width: clamp(300px, 45vw, 600px);
+  min-height: 350px;
   border-radius: 1em;
   border: 2px solid var(--color-acento-primario);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   font-family: var(--font-titulos);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 .file-name {
@@ -28,17 +30,32 @@ body.default {
   padding: 1em;
 }
 
-.terminal-log p {
-  color: var(--color-text-muted);
-}
-
 .terminal-accent {
   padding: 1em;
   font-size: 1.2em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   p {
     color: var(--color-acento-secundario);
   }
+}
+
+/* Permitir que el texto salte de línea sin estirar la terminal */
+.terminal-accent p {
+  color: var(--color-acento-secundario);
+  font-size: 1.1em;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+/* Ocultar linea del cursor al inicio */
+#cursor-line {
+  display: none;
 }
 
 .terminal-cursor {
@@ -61,24 +78,20 @@ body.default {
 
 .hero {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 2em;
-  max-width: 1600px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 4em 2em;
+  justify-content: space-around;
+  min-height: calc(100vh - 60px);
+  padding: 4rem 5%;
+  gap: 2rem;
 }
 
 /* Columna Izquierda */
 .hero-content {
-  flex: 1;
-  text-align: left;
+  max-width: 500px;
 }
 
 .hero-logo {
-  width: 250px; /* Tamaño controlado para el logo 1:1 */
+  width: 250px;
   height: 250px;
   border-radius: 20%;
   margin-bottom: 1.5em;
@@ -122,7 +135,7 @@ body.default {
   justify-content: flex-end;
 }
 
-/* --- Responsive: Para que en celular se vea bien --- */
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -143,6 +156,45 @@ body.default {
   }
 
   .terminal {
-    min-width: 100%;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+/* Estilo para las líneas de SYSTEM */
+.hidden-line {
+  opacity: 0;
+  color: var(--color-acento-primario); /* Tono intenso al aparecer */
+  transition:
+    opacity 0.5s ease,
+    color 1s ease;
+}
+
+/* Clase para apagar el tono */
+.line-faded {
+  color: var(--color-text-muted); /* Tono apagado */
+}
+
+/* Clase para que aparezcan las lineas */
+.show-line {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto Máquina de escribir para el texto largo */
+.typewriter {
+  overflow: hidden; /* No muestra el texto antes de tiempo */
+  white-space: nowrap; /* Mantiene el texto en una sola línea */
+  width: 0;
+  animation: typing 3.5s steps(60, end) forwards;
+  animation-delay: 2s; /* Espera a que carguen las líneas del sistema */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
