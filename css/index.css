@@ -1,0 +1,58 @@
+body.default {
+  font-size: 16px !important;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal {
+  background: var(--color-fondo-principal-80);
+  width: fit-content;
+  border-radius: 1em;
+  border: 2px solid var(--color-acento-primario);
+  box-shadow: 2px 2px 10px var(--color-acento-primario);
+  overflow: hidden;
+  font-family: var(--font-titulos);
+}
+
+.file-name {
+  color: rgb(220, 187, 170);
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.terminal-log {
+  padding: 1em;
+}
+
+.terminal-log p {
+  color: var(--color-text-muted);
+}
+
+.terminal-accent {
+  padding: 1em;
+  font-size: 1.2em;
+
+  p {
+    color: var(--color-acento-secundario);
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  color: var(--color-acento-secundario);
+  font-weight: bold;
+  opacity: 0.6;
+  animation: parpadeo 1.2s step-end 5;
+}
+
+@keyframes parpadeo {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}

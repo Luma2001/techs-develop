@@ -1,43 +1,41 @@
-
 @import url(./header.css);
 @import url(./nav.css);
 @import url(./main.css);
 @import url(./footer.css);
 
 @import url(./fsr.css);
+@import url(./index.css);
 
+:root {
+  --font-texto: "Roboto", inter, sans-serif; /**/
+  --font-titulos: "Space Mono", monospace; /* Space Mono o JetBrains Mono*/
+  --color-texto-principal: #f5f5dc; /* Beige / Crema de café */
+  --color-fondo-principal: #1a1a1a; /*Negro "Obsidiana" o Carbono*/
+  --color-acento-primario: #d2691e; /*Naranja "Chocolate" / Tostado*/
+  --color-acento-secundario: #00ff41; /*Verde "Matrix" para estados OK*/
 
+  --color-fondo-principal-80: #262626; /* Variante del fondo 1 tono mas claro */
+  --color-fondo-principal-60: #333; /* Variante del fondo 2 tonos más claro */
 
-:root{
-    --font-texto: "Roboto", inter, sans-serif;/**/
-    --font-titulos: "Space Mono", monospace; /* Space Mono o JetBrains Mono*/
-    --color-texto-principal: #F5F5DC; /* Beige / Crema de café */
-    --color-fondo-principal:#1A1A1A;/*Negro "Obsidiana" o Carbono*/
-    --color-acento-primario: #D2691E; /*Naranja "Chocolate" / Tostado*/
-    --color-acento-secundario: #00FF41; /*Verde "Matrix" para estados OK*/
-
+  --color-text-muted: rgb(173, 127, 102)
     /* acá definimos las variables globales de color y 
-    las fuentes seleccionadas */
+    las fuentes seleccionadas */;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; /*valor de referencia para rem*/
+  font-family: var(--font-texto);
+  background: var(--color-fondo);
 
-
-
-html{
-	scroll-behavior: smooth;
-    font-size: 10px;/*valor de referencia para rem*/
-    font-family: var(--font-texto);
-    background: var(--color-fondo);
-
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    color: var(--color-texto-principal);
-    box-sizing: border-box;/*como va a calcular el tamaño del elemento, en el width y height que le demos va a incluir a las medidas de su margin y padding*/
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto-principal);
+  box-sizing: border-box; /*como va a calcular el tamaño del elemento, en el width y height que le demos va a incluir a las medidas de su margin y padding*/
 }
-
