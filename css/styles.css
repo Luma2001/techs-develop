@@ -4,6 +4,8 @@
 @import url(./main.css);
 @import url(./footer.css);
 
+@import url(./fsr.css);
+
 
 
 :root{
@@ -23,6 +25,7 @@
 
 html{
 	scroll-behavior: smooth;
+    font-size: 10px;/*valor de referencia para rem*/
     font-family: var(--font-texto);
     background: var(--color-fondo);
 
