@@ -1,0 +1,71 @@
+.os-navbar {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-fondo-principal);
+  padding: 0.5em 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: "Space Mono", monospace;
+  height: 40px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-brand {
+  color: var(--color-acento-secundario);
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #888;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-acento-secundario);
+    border-bottom: 2px solid var(--color-acento-secundario);
+    padding-bottom: 5px;
+  }
+}
+
+.nav-links li.active a {
+  color: var(--color-acento-secundario);
+  border-bottom: 2px solid var(--color-acento-secundario);
+  padding-bottom: 5px;
+}
+
+.nav-system-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #888;
+  font-size: 0.8em;
+}
+
+.window-controls {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  color: #555;
+}
