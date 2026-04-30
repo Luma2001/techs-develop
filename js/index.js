@@ -1,4 +1,4 @@
-import {utils} from "./utils.js";
+import { utils } from "./utils.js";
 
 // Función para cargar el navbar
 async function loadNavbar() {
@@ -6,7 +6,6 @@ async function loadNavbar() {
   const text = await response.text();
   document.getElementById("navbar-container").innerHTML = text;
 }
-
 
 loadNavbar();
 
@@ -53,4 +52,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeChar();
   }, lineDelay + 1500); // Espera final después de la última línea de SYSTEM
+
+  // Funcionalidad para clics en miembros del equipo
+  const teamMembers = document.querySelectorAll("[data-team-member]");
+  const profileButtons = document.querySelectorAll(".btn-profile");
+
+  teamMembers.forEach((member) => {
+    member.addEventListener("click", (e) => {
+      e.preventDefault();
+      const memberName = member.textContent.trim();
+
+      // Efecto visual: cambio de color temporal
+      member.style.color = "var(--color-acento-secundario)";
+      member.style.textShadow = "0 0 10px var(--color-acento-secundario)";
+
+      setTimeout(() => {
+        member.style.color = "";
+        member.style.textShadow = "";
+      }, 1500);
+    });
+  });
+
+  profileButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      const card = button.closest(".id-card");
+      const memberName = card.querySelector(".member-name").textContent.trim();
+
+      // Efecto visual del botón
+      button.style.transform = "scale(0.95)";
+      setTimeout(() => {
+        button.style.transform = "";
+      }, 200);
+    });
+  });
 });
