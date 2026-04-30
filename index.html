@@ -247,6 +247,169 @@
         </div>
       </div>
     </section>
+
+    <!-- Sección de Formulario de Contacto / Orden de Pedido -->
+    <section class="order-section">
+      <div class="order-container">
+        <div class="order-header">
+          <h2 class="order-title">Compilá Tu Orden</h2>
+          <p class="order-subtitle">
+            Solicitá tu blend personalizado y nos pondremos en contacto
+          </p>
+        </div>
+
+        <form class="order-form" id="contact-form">
+          <div class="form-grid">
+            <!-- Columna 1: Selecciones -->
+            <div class="form-column">
+              <!-- Tipo de Blend (select) -->
+              <div class="form-group">
+                <label for="blend-type" class="form-label">
+                  <span class="label-icon">
+                    <i class="ti ti-coffee"></i>
+                  </span>
+                  Tipo de Blend
+                </label>
+                <select
+                  id="blend-type"
+                  name="blend-type"
+                  class="form-input"
+                  required
+                >
+                  <option value="">-- Seleccionar --</option>
+                  <option value="frontend">Frontend Fresco</option>
+                  <option value="backend">Backend Tostado</option>
+                  <option value="fullstack">Full-Stack Blend</option>
+                  <option value="devops">DevOps Intenso</option>
+                </select>
+              </div>
+
+              <!-- Intensidad / Tamaño (select) -->
+              <div class="form-group">
+                <label for="intensity" class="form-label">
+                  <span class="label-icon">
+                    <i class="ti ti-flame"></i>
+                  </span>
+                  Intensidad
+                </label>
+                <select
+                  id="intensity"
+                  name="intensity"
+                  class="form-input"
+                  required
+                >
+                  <option value="">-- Seleccionar --</option>
+                  <option value="small">Small (Startup)</option>
+                  <option value="medium">Medium (Company)</option>
+                  <option value="large">Large (Enterprise)</option>
+                  <option value="overheated">Overheated (Ultra)</option>
+                </select>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  <span class="label-icon">
+                    <i class="ti ti-mail"></i>
+                  </span>
+                  Tu Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="dev@cafecode.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Columna 2: Extras y Mensaje -->
+            <div class="form-column">
+              <!-- Extras (checkboxes) -->
+              <div class="form-group">
+                <label class="form-label">
+                  <span class="label-icon">
+                    <i class="ti ti-plus"></i>
+                  </span>
+                  Extras & Features
+                </label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      value="async"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-text">Async/Await</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      value="error-handling"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-text">Error Handling</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      value="ci-cd"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-text">CI/CD Pipeline</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="extras"
+                      value="testing"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-text">Unit Testing</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Mensaje -->
+              <div class="form-group">
+                <label for="message" class="form-label">
+                  <span class="label-icon">
+                    <i class="ti ti-message"></i>
+                  </span>
+                  Especificaciones
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input textarea-input"
+                  placeholder="Contanos qué necesitás...Soporte 24/7? Consultoría personalizada? Dejanos saber."
+                  rows="4"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de acción -->
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">
+              <span class="btn-icon">
+                <i class="ti ti-chevrons-right muted"></i>
+              </span>
+              enviar pedido
+            </button>
+            <span class="form-note"
+              >Tu información está segura con nosotros</span
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
     <div id="footer-container"></div>
   </body>
 </html>
