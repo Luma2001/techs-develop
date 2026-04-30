@@ -1,3 +1,5 @@
+import {utils} from "./utils.js";
+
 // Función para cargar el navbar
 async function loadNavbar() {
   const response = await fetch("./navbar.html");
@@ -5,9 +7,13 @@ async function loadNavbar() {
   document.getElementById("navbar-container").innerHTML = text;
 }
 
+
 loadNavbar();
 
 document.addEventListener("DOMContentLoaded", () => {
+  utils.actualizarRelog();
+  setInterval(utils.actualizarRelog, 1000);
+
   const lines = document.querySelectorAll(".hidden-line");
   const typewriterElement = document.getElementById("typewriter-text");
   const cursorLine = document.getElementById("cursor-line");

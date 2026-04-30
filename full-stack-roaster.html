@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="module" src="./js/fsr.js" defer></script>
 </head>
+
 <body class="profile-body">
 
+    <div id="navbar-container"></div>
 
     <main class="profile-card-container">
         <div class="id-card">
             <div class="card-header">
                 <div class="header-left">
                     <span class="status-dot"></span>
-                    <a href="index.html" class="back-link"> > > exit_system</a>
+                    <a href="index.html" class="back-link"> >> exit_system</a>
                 </div>
                 <div class="header-right">
-                    <span class="system-tag">FULL-STACK_ROASTER_PROFILE_V2.0</span>
+                    <span class="system-tag">LUMA BLEND MAKER // ROASTER_V2.0</span>
                 </div>  
             </div>
 
@@ -27,33 +29,48 @@
                 
                 <div class="photo-section">
                     <div class="photo-frame">
-                        <img src="img/fsr.png" alt="Full-Stack Roaster" class="profile-img">
+                        <img src="img/fsr.png" alt="Luma Blend Maker" class="profile-img">
                     </div>
                     <h1>Luma</h1>
                     <p class="role-title">Full-Stack Roaster</p>
+                    
                     <div class="roast-controls">
-                        <button id="caffeine-btn" class="btn-roast"> >> Inyectar_Cafeína.sh </button>
+                        <button id="btn-preparar" class="btn-roast"> >> Preparar mi blend </button>
+                        
+                        <div class="coffee-stats-mini">
+                            <div class="stat-item">
+                                <label>PREPARADOS:</label>
+                                <span id="count-preparadas">0</span><p> tazas de café y sumando...</p>
+                            </div>
+                            <div class="stat-item">
+                                <label>SERVIDOS:</label>
+                                <span id="count-servidas">0</span><p> bugs resueltos y servidos...</p>
+                            </div>
+                        </div>
+                    
                     </div>
                 </div>
 
                 <div class="info-section">
                     <div class="info-group">
-                        <label>UBICACIÓN:</label>
-                        <p>Mendoza, Argentina</p>
+                        <label>MI RECETA DE CÓDIGO:</label>
+                        <p>Mi receta mezcla la intensidad del backend con la frescura del frontend. Como un blend de autor, combina estructura, lógica e interacción.</p>
                     </div>
                     <div class="info-group">
-                        <label>EDAD:</label>
-                        <p>48 años</p>
+                        <label>INGREDIENTES TÉCNICOS (SKILLS):</label>
+                        <ul class="skill-tags">
+                            <li>Frontend Fresco</li>
+                            <li>Backend Tostado</li>
+                            <li>JS (El Conector)</li>
+                            <li>Responsive Sips</li>
+                            <li>GitHub Bar</li>
+                        </ul>                       
                     </div>
 
                     <div class="info-group">
-                        <label>SKILLS (TECH & BEANS):</label>
-                        <ul class="skill-tags">
-                            <li>Node.js (Fuerte)</li>
-                            <li>React (Dulce)</li>
-                            <li>Tostado de APIs</li>
-                            <li>Debug bajo presión</li>
-                        </ul>
+                        <label>MI FORMA DE TRABAJAR:</label>
+                        <p>Busco el punto justo: que nada quede crudo (sin lógica) ni quemado (código bloqueante). La conexión estable es mi especialidad.</p>
+                        <button id="btn-servir" class="btn-roast secondary"> >> Servir blend full-stack </button>
                     </div>
                 </div>
             </div>
@@ -85,6 +102,18 @@
         </div>
     </main>
 
-    <script src="js/index.js"></script>
+    <!-- MODAL DE TERMINAL (Invisible por defecto) -->
+    <div id="terminal-modal" class="terminal-overlay">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span>luma_blend_engine.sh</span>
+                <button id="close-terminal">X</button>
+            </div>
+            <div id="terminal-body" class="terminal-body">
+                <!-- Los mensajes aparecerán aquí vía JS -->
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
