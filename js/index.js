@@ -42,6 +42,7 @@ function initializeNavbar() {
 }
 
 loadNavbar();
+utils.loadFooter();
 
 document.addEventListener("DOMContentLoaded", () => {
   utils.actualizarRelog();

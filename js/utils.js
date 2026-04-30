@@ -16,6 +16,12 @@ export const utils = {
         document.getElementById("navbar-container").innerHTML = text;
     },
 
+    loadFooter: async function() {
+        const response = await fetch("./footer.html");
+        const text = await response.text();
+        document.getElementById("footer-container").innerHTML = text;
+    },
+
     printLog: async function(message, targetElement,delay = 500) {
         
         if (!targetElement) {
