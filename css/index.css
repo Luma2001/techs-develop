@@ -104,10 +104,8 @@ body.default {
 }
 
 .hero-logo {
-  width: 250px;
-  height: 250px;
-  border-radius: 20%;
-  border: 2px solid var(--color-acento-primario);
+  width: 300px;
+  height: 300px;
 }
 
 .hero-title {
