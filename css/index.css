@@ -390,3 +390,280 @@ body.default {
     aspect-ratio: 1 / 2.5;
   }
 }
+
+/* ============ BREWING SECTION ============ */
+
+/* Estilo general para todos los iconos */
+.ti {
+  font-size: 24px; /* Tamaño */
+  color: var(--color-acento-primario);
+}
+
+.brew {
+  display: inline-block;
+  font-size: 40px;
+  color: var(--color-text-muted);
+}
+
+/* Tuerca girando */
+.animate-spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.brewing-section {
+  padding: 5em 5%;
+  background: linear-gradient(
+    135deg,
+    var(--color-fondo-principal) 0%,
+    var(--color-fondo-principal-80) 100%
+  );
+  border-top: 2px solid var(--color-acento-primario);
+  border-bottom: 2px solid var(--color-acento-primario);
+}
+
+.brewing-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.brewing-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.brewing-title {
+  font-family: var(--font-titulos);
+  font-size: 2.5em;
+  color: var(--color-acento-primario);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brewing-subtitle {
+  font-size: 1.1em;
+  color: var(--color-texto-muted);
+  font-weight: 300;
+}
+
+.brewing-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Diagrama Visual del Brewing */
+.brewing-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.brewing-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: var(--color-fondo-principal-80);
+  border: 2px solid var(--color-text-muted);
+  border-radius: 1em;
+  box-shadow: 0 0 20px rgba(210, 105, 30, 0.2);
+}
+
+.brewing-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 2px solid var(--color-text-muted);
+  border-radius: 0.8em;
+  background: rgba(255, 225, 0, 0.05);
+  transition: all 0.3s ease;
+  min-width: 80px;
+  cursor: default;
+  text-align: center;
+}
+
+.brewing-step:hover {
+  background: rgba(255, 225, 0, 0.15);
+  box-shadow: 0 0 15px rgba(255, 225, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.step-label {
+  font-family: var(--font-titulos);
+  font-size: 0.85em;
+  color: var(--color-acento-primario);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.brewing-arrow {
+  font-size: 2em;
+  color: var(--color-acento-primario);
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Sección de Texto */
+.brewing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.brewing-description {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: var(--color-texto-principal);
+  margin: 0;
+}
+
+.highlight {
+  color: var(--color-acento-primario);
+  font-weight: 700;
+  text-decoration: underline wavy;
+  text-decoration-color: var(--color-acento-secundario);
+  text-underline-offset: 4px;
+}
+
+/* Metodología numerada */
+.brewing-methodology {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.method-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--color-fondo-principal-80);
+  border-left: 3px solid var(--color-acento-primario);
+  border-radius: 0.5em;
+  transition: all 0.3s ease;
+}
+
+.method-item:hover {
+  background: var(--color-fondo-principal-60);
+  border-left-color: var(--color-acento-secundario);
+  transform: translateX(8px);
+}
+
+.method-number {
+  font-family: var(--font-titulos);
+  font-size: 1.8em;
+  color: var(--color-acento-primario);
+  font-weight: 700;
+  min-width: 50px;
+  text-align: center;
+  line-height: 1;
+}
+
+.method-content {
+  flex: 1;
+}
+
+.method-title {
+  font-family: var(--font-titulos);
+  font-size: 1.1em;
+  color: var(--color-acento-secundario);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.method-text {
+  font-size: 0.95em;
+  color: var(--color-texto-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* TODO  */
+.brewing-todo {
+  font-family: var(--font-titulos);
+  font-size: 0.9em;
+  color: var(--color-acento-secundario);
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.code-comment {
+  color: var(--color-texto-muted);
+  font-weight: normal;
+  margin-right: 0.5em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .brewing-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .brewing-diagram {
+    gap: 0.8rem;
+  }
+
+  .brewing-step {
+    min-width: 70px;
+  }
+
+  .step-icon {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .brewing-section {
+    padding: 3rem 5%;
+  }
+
+  .brewing-title {
+    font-size: 2em;
+  }
+
+  .brewing-diagram {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .brewing-arrow {
+    transform: rotate(90deg);
+  }
+
+  .method-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .method-number {
+    font-size: 1.5em;
+    min-width: auto;
+  }
+
+  .brewing-tagline {
+    text-align: center;
+  }
+}
