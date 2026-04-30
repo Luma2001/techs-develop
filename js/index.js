@@ -75,15 +75,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   profileButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
-      e.preventDefault();
-      const card = button.closest(".id-card");
-      const memberName = card.querySelector(".member-name").textContent.trim();
+      e.preventDefault(); // no navegar instantaneamente
+
+      const url = button.getAttribute("href");
 
       // Efecto visual del botón
       button.style.transform = "scale(0.95)";
+
+      // Navegar despues de un breve retraso para mostrar el efecto
       setTimeout(() => {
-        button.style.transform = "";
-      }, 200);
+        window.location.href = url;
+      }, 500);
     });
   });
 });
