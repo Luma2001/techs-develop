@@ -240,13 +240,14 @@ h1, h2, h3, label {
 
 .terminal-header {
     background: var(--color-acento-primario);
-    color: var(--color-fondo-principal);
+    color: var(--color-text-muted);
     padding: 8px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-titulos);
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .terminal-header button {

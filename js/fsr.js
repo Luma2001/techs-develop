@@ -59,11 +59,11 @@ async function init() {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
 
-        await utils.printLog("cargando_perfil_luma...", terminalBody);
-        await utils.printLog("calentando_servidor...", terminalBody, 600);
-        await utils.printLog("mezclando_frontend_y_backend...", terminalBody, 800);
-        await utils.printLog("blend full-stack: OK", terminalBody);
-        await utils.printLog("taza_completa_servida", terminalBody, 400);
+        await utils.printLog("[LUMA] : cargando perfil LUMA...", terminalBody);
+        await utils.printLog("[LUMA] : calentando servidor...", terminalBody, 1600);
+        await utils.printLog("[LUMA] : mezclando frontend y backend...", terminalBody, 1800);
+        await utils.printLog("[LUMA] : blend full-stack: OK", terminalBody);
+        await utils.printLog("[LUMA] : taza completa servida", terminalBody, 1400);
         
         preparadas++;
         displayPreparadas.textContent = preparadas;
@@ -76,11 +76,11 @@ async function init() {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
         
-        await utils.printLog("blend fullstack servido...", terminalBody);
-        await utils.printLog("frontend fresco: OK", terminalBody);
-        await utils.printLog("backend intenso: OK", terminalBody);
-        await utils.printLog("conexion estable: OK", terminalBody);
-        await utils.printLog("experiencia_completa_en_una_taza", terminalBody, 600);
+        await utils.printLog("[LUMA] : blend fullstack servido...", terminalBody);
+        await utils.printLog("[LUMA] : frontend fresco: OK", terminalBody);
+        await utils.printLog("[LUMA] : backend intenso: OK", terminalBody);
+        await utils.printLog("[LUMA] : conexion estable: OK", terminalBody);
+        await utils.printLog("[LUMA] : experiencia_completa_en_una_taza", terminalBody, 1600);
         servidas++;
         displayServidas.textContent = servidas;
         localStorage.setItem('luma_servidas', servidas);

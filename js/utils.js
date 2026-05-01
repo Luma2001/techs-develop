@@ -22,7 +22,7 @@ export const utils = {
         document.getElementById("footer-container").innerHTML = text;
     },
 
-    printLog: async function(message, targetElement,delay = 500) {
+    printLog: async function(message, targetElement,delay = 1000) {
         
         if (!targetElement) {
             console.error("Error: No se proporcionó un elemento de destino para el log.");
