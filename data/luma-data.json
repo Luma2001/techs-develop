@@ -1,0 +1,36 @@
+{
+    "media": {
+        "trek": {
+            "text": "Un blend futurista con cuerpo intenso. Notas de tecnología vintage y un retrogusto a exploración espacial profunda.",
+            "image": "img/media-luma/trek.PNG"
+        },
+        "suenos": {
+            "text": "Cuerpo ligero y dulzor nostálgico. Aroma a césped recién cortado y esperanza tostada a fuego lento.",
+            "image": "img/media-luma/suenos.PNG"
+        },
+        "michael": {
+            "text": "Un café suave con toques celestiales. Notas dulces de vainilla y un aroma que reconforta el alma.",
+            "image": "./img/media-luma/michael.PNG"
+        },
+        "vida": {
+            "text": "Un clásico de origen único. Equilibrio perfecto entre amargor y dulzura, con un final persistente de gratitud.",
+            "image": "./img/media-luma/vida.PNG"
+        },
+        "dire": {
+            "text": "Tostado medio con ritmo equilibrado. Notas ácidas de guitarra limpia y un final largo y elegante.",
+            "image": "./img/media-luma/dire.PNG"
+        },
+        "alicia": {
+            "text": "Esencia pura y robusta. Un blend con alma de soul, notas de piano aterciopelado y mucha fuerza.",
+            "image": "./img/media-luma/alicia.PNG"
+        },
+        "queen": {
+            "text": "Una mezcla explosiva de granos seleccionados. Gran cuerpo, intensidad máxima y una acidez vibrante.",
+            "image": "./img/media-luma/queen.PNG"
+        },
+        "beatles": {
+            "text": "El blend más icónico del mundo. Notas de vanguardia, armonía cítrica y un aroma que nunca pasa de moda.",
+            "image": "./img/media-luma/beatles.PNG"
+        }
+    }
+}
