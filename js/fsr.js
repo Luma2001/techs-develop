@@ -9,9 +9,14 @@ async function init() {
     //Cargamos el footer
     await utils.loadFooter();
 
+    //Cargamos datos de films and discs
+    const notasDeCata =  await utils.fetchMediaData('./data/luma-data.json');
+    
     //Iniciamos el reloj
     utils.actualizarRelog();
     setInterval(utils.actualizarRelog, 1000);
+
+    
 
     //Cargamos localStorage
     let preparadas = Number(localStorage.getItem('luma_preparadas')) || 0;
@@ -29,21 +34,36 @@ async function init() {
     //Mostramos los valores guardados en el localStorage
     displayPreparadas.textContent = preparadas;
     displayServidas.textContent = servidas;
-        
-    
-    //const systemTag = document.querySelector('.system-tag');
 
+
+    document.addEventListener('mouseover', (e) => {
+        const id = e.target.dataset.id;
+        if(id && notasDeCata[id]) {
+            utils.toggleTooltip(true, notasDeCata[id], e);
+        }
+
+    });
+
+    document.addEventListener('mouseout', (e) => {
+        if(e.target.dataset.id) {
+            utils.toggleTooltip(false);
+        }  
+    });         
+
+
+            
+    
     if (!btnPreparar || !btnServir || !modal) return;
 
     btnPreparar.addEventListener('click', async () => {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
 
-        await utils.printLog("cargando_perfil_luma...", terminalBody);
-        await utils.printLog("calentando_servidor...", terminalBody, 600);
-        await utils.printLog("mezclando_frontend_y_backend...", terminalBody, 800);
-        await utils.printLog("blend full-stack: OK", terminalBody);
-        await utils.printLog("taza_completa_servida", terminalBody, 400);
+        await utils.printLog("[LUMA] : cargando perfil LUMA...", terminalBody);
+        await utils.printLog("[LUMA] : calentando servidor...", terminalBody, 1600);
+        await utils.printLog("[LUMA] : mezclando frontend y backend...", terminalBody, 1800);
+        await utils.printLog("[LUMA] : blend full-stack: OK", terminalBody);
+        await utils.printLog("[LUMA] : taza completa servida", terminalBody, 1400);
         
         preparadas++;
         displayPreparadas.textContent = preparadas;
@@ -56,11 +76,11 @@ async function init() {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
         
-        await utils.printLog("blend fullstack servido...", terminalBody);
-        await utils.printLog("frontend fresco: OK", terminalBody);
-        await utils.printLog("backend intenso: OK", terminalBody);
-        await utils.printLog("conexion estable: OK", terminalBody);
-        await utils.printLog("experiencia_completa_en_una_taza", terminalBody, 600);
+        await utils.printLog("[LUMA] : blend fullstack servido...", terminalBody);
+        await utils.printLog("[LUMA] : frontend fresco: OK", terminalBody);
+        await utils.printLog("[LUMA] : backend intenso: OK", terminalBody);
+        await utils.printLog("[LUMA] : conexion estable: OK", terminalBody);
+        await utils.printLog("[LUMA] : experiencia_completa_en_una_taza", terminalBody, 1600);
         servidas++;
         displayServidas.textContent = servidas;
         localStorage.setItem('luma_servidas', servidas);
@@ -73,8 +93,6 @@ async function init() {
 
 
 
-
-
 }
 
 
@@ -84,21 +102,3 @@ document.addEventListener('DOMContentLoaded', init);
 
 
 
-
-// btn.addEventListener('click', () => {
-//         // 1. Toggle de la clase que cambia el estado
-//         body.classList.toggle('overheated-mode');
-
-//         // 2. Modificar contenido de texto dinámicamente
-//         if (body.classList.contains('overheated-mode')) {
-//             systemTag.textContent = "SYSTEM_STATUS: OVERHEATED_BY_CAFFEINE";
-//             btn.textContent = " >> Detener_Protocolo.sh";
-//             console.warn("ALERTA: Niveles de cafeína críticos. El código se compila solo.");
-//             alert("ALERTA: Niveles de cafeína críticos. El código se compila solo.⚠️") ;
-//         } else {
-//             systemTag.textContent = "FULL-STACK_ROASTER_PROFILE_V2.0";
-//             btn.textContent = " >> Inyectar_Cafeína.sh";
-//             console.log("Sistema estabilizado. Café en niveles normales.");
-//             alert("Sistema estabilizado. Café en niveles normales.☕") ;
-//         }
-//     });
