@@ -27,14 +27,23 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 .
 ├── css/
 │   ├── styles.css                
-│   ├── footer.css            
-│   ├── hearder.css
-│   ├── main.css            
+│   ├── footer.css 
+│   ├── fsr.css           
+│   ├── index.css           
 │   └── nav.css            
 ├── data/
+│   ├── dany-data.json 
+│   ├── lean-data.json            
+│   ├── luma-data.json            
+│   └── naty-data.json 
 ├── img/
-├── js/  
+├── js/ 
+│   ├── utils.js 
+│   ├── fsr.js 
 │   └── index.js 
+├── footer.html 
+├── full-stack-roaster.html
+├── navbar.html
 ├── index.html
 └── README.md
 ```
@@ -46,6 +55,10 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
     - *Texto Principal*: #F5F5DC (Beige / Crema de café).
     - *Acento Primario*: #D2691E (Naranja "Chocolate" / Tostado).
     - *Acento Secundario*: #00FF41 (Verde "Matrix" para estados OK).
+    -  *Fondo-principal-80*: #262626; (Variante del fondo 1 tono mas claro)
+    -  *Fondo-principal-60*: #333; (Variante del fondo 2 tonos más claro)
+    -  *Text-muted*: rgb(173, 127, 102) 
+  
 - **Tipografías:** 
   - *Títulos y Código*: Space Mono o JetBrains Mono.
   - *Cuerpo de Texto*: Roboto o Inter.
@@ -53,9 +66,10 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 para privacidad.
 
 ## JavaScript
-- Indicar las funciones dinámicas implementadas en la portada y en cada página individual,
-describiendo brevemente qué hacen y en qué sección se encuentran.
-- Incluyendo capturas de pantalla.
+- [Funciones dinámicas utilizadas en las páginas](docs\funcionesJS.md)
+Descripción breve de cada una de las funciones utilizadas en el proyecto, incluye capturas de pantalla. 
+
+
 - Enlace al Proyecto Desplegado
 - Indicar el link de publicación en Vercel.
 
