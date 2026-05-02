@@ -1,0 +1,36 @@
+{
+    "media": {
+        "mamma-mia": {
+            "text": "Un latte alegre y luminoso, con notas de verano, música y reencuentros familiares. Dulce, espumoso y con retrogusto a canción compartida.",
+            "image": "img/media-naty/mamma-mia.jpg"
+        },
+        "love-actually": {
+            "text": "Un capuchino navideño, cálido y lleno de pequeñas historias. Mezcla notas de ternura, humor y emoción, con un final suave y reconfortante.",
+            "image": "img/media-naty/love-actually.jpg"
+        },
+        "harry-sally": {
+            "text": "Un café clásico de conversación lenta, con notas de amistad, ironía y romance inesperado. Ideal para saborear entre diálogos inteligentes y encuentros a destiempo.",
+            "image": "./img/media-naty/harry-sally.jpg"
+        },
+        "inseparables": {
+            "text": "Un café intenso y emocional, con cuerpo de amistad profunda y notas de lealtad, recuerdos y compañía. Deja un retrogusto sensible, de esos que permanecen después del último sorbo.",
+            "image": "./img/media-naty/inseparables.jpg"
+        },
+        "miranda-corazon": {
+            "text": "Un latte pop brillante y dulce, con notas de baile, teatralidad y corazones en modo remix. Espumoso, colorido y con final pegadizo.",
+            "image": "./img/media-naty/miranda-corazon.jpg"
+        },
+        "babasonicos-anoche": {
+            "text": "Un espresso nocturno y elegante, con cuerpo intenso, notas de deseo, misterio y guitarras oscuras. Deja un retrogusto moderno y seductor.",
+            "image": "./img/media-naty/babasonicos-anoche.jpg"
+        },
+        "foo-hits": {
+            "text": "Un café americano bien cargado, con notas de guitarras potentes, energía de escenario y estribillos fuertes. Intenso, directo y con final explosivo.",
+            "image": "./img/media-naty/foo-hits.jpg"
+        },
+        "cerati-fuerza": {
+            "text": "Un café de autor suave y profundo, con notas orgánicas, paisajes sonoros y una calma luminosa. Delicado, envolvente y con retrogusto poético.",
+            "image": "./img/media-naty/cerati-fuerza.jpg"
+        }
+    }
+}
