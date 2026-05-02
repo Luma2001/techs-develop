@@ -66,7 +66,7 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 para privacidad.
 
 ## JavaScript
-- [Funciones dinámicas utilizadas en las páginas](.\docs\funcionesJS.md)
+- [Funciones dinámicas utilizadas en las páginas](./docs/funcionesJS.md)
 Descripción breve de cada una de las funciones utilizadas en el proyecto, incluye capturas de pantalla. 
 
 
