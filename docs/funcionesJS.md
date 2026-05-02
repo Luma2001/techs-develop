@@ -2,7 +2,7 @@
 
 ![imagen de navbar y reloj](image.png)
 
-## actualizarRelog()
+## actualizarReloj()
 Objetivo capturar el tiempo actual del sistema y renderizarlo en la interfaz del usuario.
 - **USO**: en navbar.html
 
