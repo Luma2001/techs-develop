@@ -337,4 +337,17 @@ Escuchamos el evento y le decimos qué debe hacer: cambio de color, brillo,etc
 **RESTAURACIÓN**: Esperamos 1500 milisegundos (1.5 segundos).  
         
 
+## Custom `<select>`
+Función utilizada para reempplazar los `select` tradicionales de html por un elemento personalizado.
 
+Esto se realiza principalmente por un bug conocido en html cuando se encuentran abiertas las devtools. El bug ocasiona que el dropdown menu nativo de HTML se posicione en un lugar incorrecto.
+
+Con esta función logramos resolver el bug al tiempo que creamos un componente visualmente acorde con el resto de la interfaz.
+
+```js
+function initCustomSelects() { ... }
+```
+
+Se encarga de buscar cada uno de los `select` del DOM y reemplazarlos por el componente estilizado.
+
+**USO**: Se emplea dentro del `addEventListener` de tipo `DOMContentLoaded` del `document`, es decir, al cargar el contenido del DOM.
