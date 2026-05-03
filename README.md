@@ -141,3 +141,11 @@ Los prompts base utilizados para avatares, logo y notas de cata se documentan en
 Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones.
 
 - [Modelo y criterio de prompt](./docs/prompt.md)
+
+## Debugger
+El debugger es una herramienta integrada en la mayoria de IDEs que permite recorrer el código de manera controlada línea por línea. Esta herramienta es especialmente útil para encontrar problemas o errores en el código, conocidos popularmente como `bugs` ( de ahí el nombre `debugger`).
+
+### Debugging en el proyecto
+
+Durante el desarrollo se realizaron tareas de debugging para detectar y resolver errores en la carga de estilos, scripts e interacciones. En JavaScript se utilizó la consola del navegador y pruebas con `console.log()` para verificar si los archivos se cargaban correctamente, si los botones ejecutaban sus funciones y si los data-id del HTML coincidían con las claves del JSON. También se revisó la existencia de elementos necesarios en el DOM, como el contenedor `barista-tooltip`, para que funcionaran los tooltips de películas y discos.
+En CSS y estructura de archivos se revisaron rutas, nombres de carpetas y ubicación de archivos cuando algunas páginas no cargaban estilos o imágenes. Para resolverlo se utilizó Live Server, se verificó que los archivos estuvieran dentro de la carpeta correcta del proyecto y se corrigieron nombres, extensiones y enlaces internos. Estos procesos permitieron mejorar la visualización de las fichas, la navegación y la coherencia visual del sitio.
