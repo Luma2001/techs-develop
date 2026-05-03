@@ -10,18 +10,18 @@ async function init() {
     await utils.loadFooter();
 
     //Cargamos datos de films and discs
-    const notasDeCata =  await utils.fetchMediaData('./data/dani-data.json');
+    const notasDeCata =  await utils.fetchMediaData('./data/lean-data.json');
     
     //Iniciamos el reloj
     utils.actualizarRelog();
     setInterval(utils.actualizarRelog, 1000);
 
-      //llamamos a la función para cargar los enlaces del equipo
-    await utils.renderOtrosMiembros('dani');
+    //llamamos a la función para cargar los enlaces del equipo
+    await utils.renderOtrosMiembros('lean');
 
     //Cargamos localStorage
-    let preparadas = Number(localStorage.getItem('dani_preparadas')) || 0;
-    let servidas = Number(localStorage.getItem('dani_servidas')) || 0;
+    let preparadas = Number(localStorage.getItem('lean_preparadas')) || 0;
+    let servidas = Number(localStorage.getItem('lean_servidas')) || 0;
 
     // Referencias a elementos del DOM
     const terminalBody = document.getElementById('terminal-body');
@@ -60,15 +60,15 @@ async function init() {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
 
-        await utils.printLog("[DANI] : cargando_perfil_DANI...", terminalBody);
-        await utils.printLog("[DANI] : verificando_deploy...", terminalBody, 1600);
-        await utils.printLog("[DANI] : revisando_flujo_de_café_y_código...", terminalBody, 1800);
-        await utils.printLog("[DANI] : suministro_de_cafeina: OK", terminalBody);
-        await utils.printLog("[DANI] : sistema_en_linea", terminalBody, 1400);
+        await utils.printLog("[LEAN] : cargando perfil LEAN...", terminalBody);
+        await utils.printLog("[LEAN] : conectando_base_de_datos...", terminalBody, 1600);
+        await utils.printLog("[LEAN] : filtrando_tecnologías...", terminalBody, 1800);
+        await utils.printLog("[LEAN] : backend_estable: OK", terminalBody);
+        await utils.printLog("[LEAN] : espresso_backend_servido", terminalBody, 1400);
         
         preparadas++;
         displayPreparadas.textContent = preparadas;
-        localStorage.setItem('dani_preparadas', preparadas);
+        localStorage.setItem('lean_preparadas', preparadas);
    
     });
 
@@ -77,15 +77,14 @@ async function init() {
         terminalBody.innerHTML = ''; 
         modal.style.display = 'flex';
         
-        await utils.printLog("[DANI] : activando_barra_online...", terminalBody);
-        await utils.printLog("[DANI] : granos_disponibles: OK", terminalBody);
-        await utils.printLog("[DANI] : leches_y_vasos: OK", terminalBody);
-        await utils.printLog("[DANI] : github_conectado: OK", terminalBody);
-        await utils.printLog("[DANI] : flujo_de_codigo_activo: OK", terminalBody);
-        await utils.printLog("[DANI] : cafeteria_digital_lista_para_servir", terminalBody, 1600);
+        await utils.printLog("[LEAN] : espresso_backend_servido...", terminalBody);
+        await utils.printLog("[LEAN] : datos_filtrados: OK", terminalBody);
+        await utils.printLog("[LEAN] : rutas_conectadas: OK", terminalBody);
+        await utils.printLog("[LEAN] : logica_interna: OK", terminalBody);
+        await utils.printLog("[LEAN] : sistema_fuerte_y_sin_tostado_excesivo", terminalBody, 1600);
         servidas++;
         displayServidas.textContent = servidas;
-        localStorage.setItem('dani_servidas', servidas);
+        localStorage.setItem('lean_servidas', servidas);
     
     });
 

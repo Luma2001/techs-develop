@@ -1,45 +1,6 @@
 import { utils } from "./utils.js";
 
-// Función para cargar el navbar
-// async function loadNavbar() {
-//   const response = await fetch("./navbar.html");
-//   const text = await response.text();
-//   document.getElementById("navbar-container").innerHTML = text;
-//   initializeNavbar(); // Inicializar el navbar después de cargarlo
-// }
 
-// Función para inicializar el navbar responsive
-// function initializeNavbar() {
-//   const hamburgerMenu = document.getElementById("hamburger-menu");
-//   const navMenu = document.getElementById("nav-menu");
-//   const navLinks = document.querySelectorAll(".nav-links a");
-
-//   if (hamburgerMenu) {
-//     hamburgerMenu.addEventListener("click", () => {
-//       hamburgerMenu.classList.toggle("active");
-//       navMenu.classList.toggle("active");
-//     });
-
-//     // Cerrar el menú cuando se hace click en un link
-//     navLinks.forEach((link) => {
-//       link.addEventListener("click", () => {
-//         hamburgerMenu.classList.remove("active");
-//         navMenu.classList.remove("active");
-//       });
-//     });
-
-//     // Cerrar el menú cuando se hace click fuera
-//     document.addEventListener("click", (e) => {
-//       if (
-//         !e.target.closest(".os-navbar") &&
-//         hamburgerMenu.classList.contains("active")
-//       ) {
-//         hamburgerMenu.classList.remove("active");
-//         navMenu.classList.remove("active");
-//       }
-//     });
-//   }
-// }
 
 utils.loadNavbar();
 utils.loadFooter();

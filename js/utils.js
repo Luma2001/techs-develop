@@ -121,7 +121,7 @@ export const utils = {
 
             // Generamos el HTML para los 3 restantes
             container.innerHTML = otros.map(m => `
-                <a href="${m.id}.html" class="card-miembro">
+                <a href="${m.link}" class="card-miembro">
                     <img src="${m.foto}" alt="${m.nombre}" class="foto-mini">
                     <span>${m.nombre}</span>
                 </a>

@@ -1,8 +1,8 @@
 {
   "miembros": [
-    { "id": "luma", "nombre": "LUMA", "foto": "img/fsr.png" },
-    { "id": "dani", "nombre": "DANI", "foto": "img/devops-supply.jpg" },
-    { "id": "naty", "nombre": "NATY", "foto": "img/qa-tester.jpeg" },
-    { "id": "lean", "nombre": "LEAN", "foto": "img/backend-dev.png" }
+    { "id": "luma", "nombre": "LUMA", "foto": "img/fsr.png", "link": "full-stack-roaster.html" },
+    { "id": "dani", "nombre": "DANI", "foto": "img/devops-supply.jpg", "link": "devops-supply-chain.html" },
+    { "id": "naty", "nombre": "NATY", "foto": "img/qa-tester.jpg", "link": "qa-tester.html" },
+    { "id": "lean", "nombre": "LEAN", "foto": "img/backend-dev.jpg", "link": "backend-dev.html" }
   ]
 }
