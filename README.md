@@ -5,6 +5,18 @@
 ## Descripción del Proyecto
 La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Agencia de Desarrollo de Software que opera bajo la lógica y estética de una Cafetería de Especialidad. Se busca fusionar el rigor técnico (interfaces de terminal, sintaxis de código) con el humor centrado en la cultura "dev" (dependencia a la cafeína, resolución de bugs y jerga técnica).
 
+## Objetivo
+Presentar la Agencia de Desarrollo de Software 'The Coffe-Code Engine', con una estética moderna y atractiva, fusionando la tecnología con la estética de una cafetería de especialidad.
+
+## Funcionalidades Básicas
+- `index.html`: Objetivo: presentar la empresa e introducir sobre cada integrante del equipo
+  - Sección `hero`: Sección destacada que presenta la empresa e incorpora un CTO (Llamado a la acción), invitando al visitante a contactarse
+  - Sección `brewing`: Descripción del proceso de elaboración del mejor software con temática de cafetería
+  - Sección `source`: Presentación de los miembros del equipo, como baristas-devs
+  - Sección `terminal`: Formulario de contacto
+- Fichas individuales: Fichas de presentación de los diferentes miembros del equipo con información detallada. Accesible desde la sección `source` de `index.html`
+- Bitácora: Registro detallado de decisiones y dificultades transcurridas durante la duración del proyecto
+
 ## Integrantes
 
 | Nombre y Apellido | Link perfil Github |
@@ -70,6 +82,7 @@ para privacidad.
 
 ## JavaScript
 - [Funciones dinámicas utilizadas en las páginas](./docs/funcionesJS.md)
+
 Descripción breve de cada una de las funciones utilizadas en el proyecto, incluye capturas de pantalla. 
 
 
@@ -105,8 +118,3 @@ Utilizamos el mismo agente para la redacción de las descripciones de las pelíc
 ### Imágenes: 
 Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones. 
   - [Modelo y criterio de prompt](./docs/prompt.md)
-
-
-
-
-
