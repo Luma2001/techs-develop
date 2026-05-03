@@ -86,7 +86,7 @@ h1, h2, h3, label {
 
 .photo-frame {
     width: 160px;
-    height: 160px;
+    height: 200px;
     margin: 0 auto 15px;
     border: 3px solid var(--color-acento-primario);
 }

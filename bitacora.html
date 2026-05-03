@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Equipo | The coffee-code engine</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/bitacora.js" defer></script>
+</head>
+<body class="terminal-theme">
+    <!-- El Navbar se cargará aquí automáticamente mediante utils.js -->
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <header class="section-header">
+            <h1 class="bitacora-title">_BITÁCORA_DE_SISTEMA</h1>
+            <p class="section-subtitle">Registro histórico de despliegues y tareas de refactorización.</p>
+        </header>
+
+        <section class="log-container">
+            <table class="bitacora-table">
+                <thead>
+                    <tr>
+                        <th>FECHA</th>
+                        <th>RESPONSABLE</th>
+                        <th>TAREA / HITO</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody id="bitacora-body">
+                    <!-- Ejemplo de fila estática para ver el estilo -->
+                    <tr>
+                        <td>2026-05-03</td>
+                        <td>LUCIANA</td>
+                        <td>Refactorización de Navbar y rutas absolutas</td>
+                        <td><span class="status-done">COMPLETADO</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+
+    <!-- Contenedor para los enlaces a otros miembros (opcional aquí) -->
+    <div id="otros-miembros-container"></div>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/bitacora.js"></script>
+</body>
+</html>

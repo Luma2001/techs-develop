@@ -1,10 +1,19 @@
-/* Contenedor principal de los compañeros */
+/* Contenedor principal equipo */
 .grid-equipo {
     display: flex;
     justify-content: center;
     gap: 2rem; /* Espacio entre cada compañero */
-    margin-top: 20px;
-    padding: 20px;
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten a la pantalla */
+    margin-bottom: 2rem;
+}
+
+.title-equipo {
+  font-family: var(--font-titulos);
+  font-size: 2.5em;
+  color: var(--color-acento-primario);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /* La tarjeta individual (el enlace <a>) */
@@ -12,8 +21,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; /* Quitamos el subrayado azul */
-    color: var(--color-texto-principal); /* Usamos tus variables */
+    text-decoration: none; 
+    color: var(--color-texto-principal);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
