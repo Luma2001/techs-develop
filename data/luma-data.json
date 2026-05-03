@@ -2,11 +2,11 @@
     "media": {
         "trek": {
             "text": "Un blend futurista con cuerpo intenso. Notas de tecnología vintage y un retrogusto a exploración espacial profunda.",
-            "image": "img/media-luma/trek.PNG"
+            "image": "./img/media-luma/trek.PNG"
         },
         "suenos": {
             "text": "Cuerpo ligero y dulzor nostálgico. Aroma a césped recién cortado y esperanza tostada a fuego lento.",
-            "image": "img/media-luma/suenos.PNG"
+            "image": "./img/media-luma/suenos.PNG"
         },
         "michael": {
             "text": "Un café suave con toques celestiales. Notas dulces de vainilla y un aroma que reconforta el alma.",
