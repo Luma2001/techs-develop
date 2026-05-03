@@ -1,128 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil | Full-Stack Roaster</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <script type="module" src="./js/bdb.js" defer></script>
-</head>
+  </head>
 
-<body class="profile-body">
-
+  <body class="profile-body">
     <div id="navbar-container"></div>
 
     <main class="profile-card-container">
-        <div class="id-card">
-            <div class="card-header">
-                <div class="header-left">
-                    <span class="status-dot"></span>
-                    <a href="index.html" class="back-link"> >> exit_system</a>
-                </div>
-                <div class="header-right">
-                    <span class="system-tag">LEAN BACKEND DEV // BREWER_V2.0</span>
-                </div>  
-            </div>
-
-            <div class="card-content">
-                
-                <div class="photo-section">
-                    <div class="photo-frame">
-                        <img src="img/backend-dev.jpg" alt="Lean Backend Brewer" class="profile-img">
-                    </div>
-                    <h1>Lean</h1>
-                    <p class="role-title">Lead Barista Backend</p>
-                    
-                    <div class="roast-controls">
-                        <button id="btn-preparar" class="btn-roast"> >> Preparar mi espresso backend </button>
-                        
-                        <div class="coffee-stats-mini">
-                            <div class="stat-item">
-                                <label>Espressos:</label>
-                                <span id="count-preparadas">0</span><p> tazas de café y sumando...</p>
-                            </div>
-                            <div class="stat-item">
-                                <label>Brewed:</label>
-                                <span id="count-servidas">0</span><p> espressos resueltos y servidos...</p>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-
-                <div class="info-section">
-                    <div class="info-group">
-                        <label>MI RECETA DE CÓDIGO:</label>
-                        <p>Mi receta combina una base fuerte de lógica backend, datos bien filtrados y una preparación precisa para que cada funcionalidad llegue al cliente como un espresso intenso: corto, claro y sin residuos innecesarios.</p>
-                    </div>
-                    <div class="info-group">
-                        <label>INGREDIENTES TÉCNICOS (SKILLS):</label>
-                        <ul class="skill-tags">
-                            <li>Backend espresso</li>
-                            <li>Datos al grano</li>
-                            <li>Rutas del cliente</li>
-                            <li>Validaciones</li>
-                            <li>GitHub Bar</li>
-                        </ul>                       
-                    </div>
-
-                    <div class="info-group">
-                        <label>MI FORMA DE TRABAJAR:</label>
-                        <p>Me gusta pensar el backend como la preparación de un espresso bien hecho: no siempre se ve a simple vista, pero sostiene toda la experiencia. Primero organizo los datos, reviso qué necesita el sistema y busco que cada parte tenga una función clara.</p>
-                        <button id="btn-servir" class="btn-roast secondary"> >> Servir espresso backend </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="extra-info">
-                <div class="list-box">
-                    <h3>🎬 FILMS_LOG</h3>
-                    <ul id="media-list">
-                        <li data-id="trek">☕ Stark Trek – Primer Contacto (1996)</li>
-                        <li data-id="suenos">☕ El campo de los Sueños (1989)</li>
-                        <li data-id="michael">☕ Michael (1996)</li>
-                        <li data-id="vida">☕ Qué bello es vivir (1946)</li>
-                    </ul>
-                </div>
-                <div class="list-box"> 
-                    <h3>💿 DISCS_DRIVE</h3>
-                    <ul id="audio-list">
-                        <li data-id="dire">☕ Sultans of swing The very best of Dire Straits</li>
-                        <li data-id="alicia">☕ As I am Alicia Keys</li>
-                        <li data-id="queen">☕ Greatest Hits III Queen</li>
-                        <li data-id="beatles">☕ Abbey Road The Beatles</li>
-                    </ul>
-                </div>
-                <div id="barista-tooltip" class="tooltip-hidden"></div> <!--Contenedor invisible para el tooltip-->
-            </div>
-
-            <div class="card-footer">
-                <p>"Especialista en preparar el espresso base que sostiene toda la experiencia digital. Selecciona los mejores granos tecnológicos, filtra la información importante y se asegura de que los datos mantengan el punto justo, sin quemarse como un mal tostado."</p>
-            </div>
+      <div class="id-card">
+        <div class="card-header">
+          <div class="header-left">
+            <span class="status-dot"></span>
+            <a href="index.html" class="back-link"> >> exit_system</a>
+          </div>
+          <div class="header-right">
+            <span class="system-tag">LEAN BACKEND DEV // BREWER_V2.0</span>
+          </div>
         </div>
+
+        <div class="card-content">
+          <div class="photo-section">
+            <div class="photo-frame">
+              <img
+                src="img/backend-dev.jpg"
+                alt="Lean Backend Brewer"
+                class="profile-img"
+              />
+            </div>
+            <h1>Lean</h1>
+            <p class="role-title">Lead Barista Backend</p>
+
+            <div class="roast-controls">
+              <button id="btn-preparar" class="btn-roast">
+                >> Preparar mi espresso backend
+              </button>
+
+              <div class="coffee-stats-mini">
+                <div class="stat-item">
+                  <label>Espressos:</label>
+                  <span id="count-preparadas">0</span>
+                  <p>tazas de café y sumando...</p>
+                </div>
+                <div class="stat-item">
+                  <label>Brewed:</label>
+                  <span id="count-servidas">0</span>
+                  <p>espressos resueltos y servidos...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="info-group">
+              <label>MI RECETA DE CÓDIGO:</label>
+              <p>
+                Mi receta combina una base fuerte de lógica backend, datos bien
+                filtrados y una preparación precisa para que cada funcionalidad
+                llegue al cliente como un espresso intenso: corto, claro y sin
+                residuos innecesarios.
+              </p>
+            </div>
+            <div class="info-group">
+              <label>INGREDIENTES TÉCNICOS (SKILLS):</label>
+              <ul class="skill-tags">
+                <li>Backend espresso</li>
+                <li>Datos al grano</li>
+                <li>Rutas del cliente</li>
+                <li>Validaciones</li>
+                <li>GitHub Bar</li>
+              </ul>
+            </div>
+
+            <div class="info-group">
+              <label>MI FORMA DE TRABAJAR:</label>
+              <p>
+                Me gusta pensar el backend como la preparación de un espresso
+                bien hecho: no siempre se ve a simple vista, pero sostiene toda
+                la experiencia. Primero organizo los datos, reviso qué necesita
+                el sistema y busco que cada parte tenga una función clara.
+              </p>
+              <button id="btn-servir" class="btn-roast secondary">
+                >> Servir espresso backend
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="extra-info">
+          <div class="list-box">
+            <h3>🎬 FILMS_LOG</h3>
+            <ul id="media-list">
+              <li data-id="nobody">☕ Mr. Nobody (2009)</li>
+              <li data-id="enemy">☕ Enemy (2013)</li>
+              <li data-id="conspiracy">☕ The Conspiracy (2012)</li>
+              <li data-id="animals">☕ Animales Nocturnos (2016)</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <h3>💿 DISCS_DRIVE</h3>
+            <ul id="audio-list">
+              <li data-id="dark-side">
+                ☕ The Dark Side Of The Moon - Pink Floyd
+              </li>
+              <li data-id="bocanada">☕ Bocanada - Gustavo Cerati</li>
+              <li data-id="canada">
+                ☕ The Campfire Headphase – Boards of Canada
+              </li>
+              <li data-id="tame">☕ Currents – Tame Impala</li>
+            </ul>
+          </div>
+          <div id="barista-tooltip" class="tooltip-hidden"></div>
+          <!--Contenedor invisible para el tooltip-->
+        </div>
+
+        <div class="card-footer">
+          <p>
+            "Especialista en preparar el espresso base que sostiene toda la
+            experiencia digital. Selecciona los mejores granos tecnológicos,
+            filtra la información importante y se asegura de que los datos
+            mantengan el punto justo, sin quemarse como un mal tostado."
+          </p>
+        </div>
+      </div>
     </main>
 
     <!-- ENLACES DEL EQUIPO -->
     <section class="grid-equipo">
-        <h3 class="title-equipo">Conoce al resto del equipo: </h3>
-        <!-- Este div es el que usará JS para inyectar los enlaces -->
-        <div id="otros-miembros-container" class="grid-equipo"></div>
+      <h3 class="title-equipo">Conoce al resto del equipo:</h3>
+      <!-- Este div es el que usará JS para inyectar los enlaces -->
+      <div id="otros-miembros-container" class="grid-equipo"></div>
     </section>
 
     <!-- MODAL DE TERMINAL (Invisible por defecto) -->
     <div id="terminal-modal" class="terminal-overlay">
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <span>lean_backend_engine.sh</span>
-                <button id="close-terminal">X</button>
-            </div>
-            <div id="terminal-body" class="terminal-body">
-                <!-- Los mensajes aparecerán aquí vía JS -->
-            </div>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span>lean_backend_engine.sh</span>
+          <button id="close-terminal">X</button>
         </div>
+        <div id="terminal-body" class="terminal-body">
+          <!-- Los mensajes aparecerán aquí vía JS -->
+        </div>
+      </div>
     </div>
 
     <div id="footer-container"></div>
-</body>
+  </body>
 </html>

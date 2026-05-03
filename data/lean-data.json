@@ -1,0 +1,36 @@
+{
+  "media": {
+    "nobody": {
+      "text": "Un blend de infinitas posibilidades con un cuerpo expansivo; se siente como un café cuyas notas cambian por completo según la temperatura a la que decidas beberlo.",
+      "image": "img/media-lean/mr-nobody.jpg"
+    },
+    "enemy": {
+      "text": "Un espresso doble, oscuro y desconcertante, con un aroma denso que te deja un retrogusto persistente a misterio y una ligera acidez difícil de procesar.",
+      "image": "img/media-lean/enemy.jpg"
+    },
+    "conspiracy": {
+      "text": "Un filtrado de tostado medio que parece ligero al primer sorbo, pero revela un final amargo y paranoico que te mantiene alerta mucho después de la última gota.",
+      "image": "./img/media-lean/conspiracy.jpg"
+    },
+    "animals": {
+      "text": "Una taza de intensidad extrema y elegancia fría; posee la sofisticación de un latte visualmente perfecto, pero con un dulzor ausente y un golpe de cafeína que no te dejará dormir.",
+      "image": "./img/media-lean/animals.jpg"
+    },
+    "dark-side": {
+      "text": "Un tostado clásico y envolvente que define el estándar del grano; un blend equilibrado que recorre todo el espectro sensorial, desde un inicio suave hasta un final circular y eterno.",
+      "image": "./img/media-lean/dark-side.jpg"
+    },
+    "bocanada": {
+      "text": "Como un latte de autor servido con precisión técnica: una textura aterciopelada, notas electrónicas sutiles y un aroma sofisticado que flota en el aire como una densa nube de vapor.",
+      "image": "./img/media-lean/bocanada.jpg"
+    },
+    "canada": {
+      "text": "Un café de especialidad con cuerpo orgánico y recuerdos de madera; posee un dulzor nostálgico y un retrogusto analógico que evoca la calidez de una fogata al atardecer.",
+      "image": "./img/media-lean/canada.jpg"
+    },
+    "tame": {
+      "text": "Una extracción moderna de alta intensidad con matices psicodélicos; un espresso vibrante que fluye entre capas sintéticas y deja un brillo ácido, perfecto para entrar en un estado de flow creativo.",
+      "image": "./img/media-lean/tame.jpg"
+    }
+  }
+}
