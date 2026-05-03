@@ -961,3 +961,17 @@ select.form-input option:hover {
     font-size: 1em;
   }
 }
+
+@media (max-width: 400px) {
+  .member-name  {
+    font-size: 2em;
+  }
+
+  .member-role {
+    font-size: 1.2em;
+  }
+
+  .btn-profile {
+    font-size: 1.5em;
+  }
+}

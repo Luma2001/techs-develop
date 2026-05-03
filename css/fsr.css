@@ -382,6 +382,10 @@ label {
 
 /* 1. MÓVILES PEQUEÑOS (Hasta 400px) */
 @media (max-width: 400px) {
+  .profile-body {
+    padding-top: 10em;
+  }
+
   .id-card {
     margin: 1rem;
     width: calc(100% - 2rem);
@@ -400,6 +404,10 @@ label {
     font-size: 1.2rem;
     width: 120px;
     text-align: right;
+  }
+
+  .grid-equipo {
+    text-align: center;
   }
 }
 
