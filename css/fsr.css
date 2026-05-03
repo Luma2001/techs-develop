@@ -1,368 +1,380 @@
 /* 1. Base y Tipografías */
 body {
-    background-color: var(--color-fondo-principal);
-    color: var(--color-texto-principal);
-    font-family: var(--font-texto);
-    margin: 0;
-    line-height: 1.6;
+  background-color: var(--color-fondo-principal);
+  color: var(--color-texto-principal);
+  font-family: var(--font-texto);
+  margin: 0;
+  line-height: 1.6;
 }
 
-h1, h2, h3, label {
-    font-family: var(--font-titulos);
-    margin-top: 2rem;
+h1,
+h2,
+h3,
+label {
+  font-family: var(--font-titulos);
+  margin-top: 2rem;
 }
 
 /* 2. Contenedor de la Tarjeta */
 .id-card {
-    max-width: 800px; 
-    margin: 15rem auto;
-    border: 2px solid var(--color-acento-primario);
-    background: #222;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: 0 0 2rem rgba(210, 105, 30, 0.2);
+  max-width: 800px;
+  margin: 15rem auto;
+  border: 2px solid var(--color-acento-primario);
+  background: #222;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(210, 105, 30, 0.2);
 }
 
 /* 3. Encabezado */
 .card-header {
-    background-color: var(--color-acento-primario);
-    color: var(--color-fondo-principal);
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between; /* Empuja los elementos a los extremos */
-    align-items: center;
-    font-family: var(--font-titulos);
-    font-weight: bold;
-    font-size: 2rem;
+  background-color: var(--color-acento-primario);
+  color: var(--color-fondo-principal);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Empuja los elementos a los extremos */
+  align-items: center;
+  font-family: var(--font-titulos);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .back-link {
-    text-decoration: none;
-    color: var(--color-fondo-principal); /* Color oscuro para contrastar con el naranja */
-    font-size: 1.2rem;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid var(--color-fondo-principal);
-    border-radius: 0.4rem;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(
+    --color-fondo-principal
+  ); /* Color oscuro para contrastar con el naranja */
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--color-fondo-principal);
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
 }
 
 .back-link:hover {
-    background-color: var(--color-fondo-principal);
-    color: var(--color-acento-primario);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: var(--color-fondo-principal);
+  color: var(--color-acento-primario);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .status-dot {
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--color-acento-secundario);
-    border-radius: 50%;
-    box-shadow: 0 0 8px var(--color-acento-secundario);
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-acento-secundario);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--color-acento-secundario);
 }
 
 /* 4. FLEXBOX*/
 .card-content {
-    display: flex;          
-    flex-direction: row;    
-    align-items: stretch; 
-    gap: 1rem;
-    border-bottom: 1px solid var(--color-fondo-principal-60);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-fondo-principal-60);
 }
 
 /* Sección Izquierda (Foto y Nombre) */
 .photo-section {
-    flex: 1; /* Ocupa una parte */
-    padding: 3rem;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-right: 1px solid var(--color-fondo-principal-60);
+  flex: 1; /* Ocupa una parte */
+  padding: 3rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-right: 1px solid var(--color-fondo-principal-60);
 }
 
 .photo-frame {
-    width: 160px;
-    height: 200px;
-    margin: 0 auto 15px;
-    border: 3px solid var(--color-acento-primario);
+  width: 160px;
+  height: 200px;
+  margin: 0 auto 15px;
+  border: 3px solid var(--color-acento-primario);
 }
 
 .profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: sepia(40%); /* Toque de color café */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(40%); /* Toque de color café */
 }
 
 .photo-section h1 {
-    color: var(--color-acento-primario);
-    margin: 10px 0 5px 0;
+  color: var(--color-acento-primario);
+  margin: 10px 0 5px 0;
 }
 
 /* Sección Derecha (Info Técnica) */
 .info-section {
-    flex: 1.5;  /* Ocupa un poco más que la foto */
-    padding: 3rem;
+  flex: 1.5; /* Ocupa un poco más que la foto */
+  padding: 3rem;
 }
 
 .info-group label {
-    color: var(--color-acento-secundario);
-    font-size: 2rem;
-    display: block;
+  color: var(--color-acento-secundario);
+  font-size: 2rem;
+  display: block;
 }
 
 .info-group p {
-    margin-bottom: 1.5rem;
-    font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /* Skills Tags */
 .skill-tags {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .skill-tags li {
-    font-family: var(--font-titulos);
-    border: 1px solid var(--color-acento-secundario);
-    color: var(--color-acento-secundario);
-    margin-top: 0.8rem;
-    padding: 0.2rem 0.8rem;
-    font-size: 1.6rem;
-    border-radius: 0.4rem;
+  font-family: var(--font-titulos);
+  border: 1px solid var(--color-acento-secundario);
+  color: var(--color-acento-secundario);
+  margin-top: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
 }
 
 /* 5. Listas de Intereses*/
 .extra-info {
-    display: flex;  
-    gap: 3rem;
-    padding: 2rem;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
 }
 
 .list-box {
-    flex: 1;
-    ul{
-        list-style: none;
-        padding: 0.8rem;
-        li{
-            margin-left: 0.8rem;
-            font-size: 1.4rem;
-
-        }
+  flex: 1;
+  ul {
+    list-style: none;
+    padding: 0.8rem;
+    li {
+      margin-left: 0.8rem;
+      font-size: 1.4rem;
     }
+  }
 }
 
 .list-box h3 {
-    color: var(--color-acento-primario);
-    font-size: 1.6rem;
-    border-bottom: 1px solid var(--color-acento-primario);
+  color: var(--color-acento-primario);
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--color-acento-primario);
 }
 
 /* 6. Pie de Página */
 .card-footer {
-    background: #111;
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 1.4rem;
-    font-family: var(--font-titulos);
-    color: var(--color-acento-primario);
+  background: #111;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: var(--font-titulos);
+  color: var(--color-acento-primario);
 }
-
 
 /* Clase aplicada por JS */
 .overheated-mode {
-    --color-acento-secundario: #FF4500; /* Naranja fuego intenso */
+  --color-acento-secundario: #ff4500; /* Naranja fuego intenso */
 }
 
 .overheated-mode .profile-img {
-    animation: shake 0.2s infinite; /* Animación de vibración */
-    filter: sepia(0) contrast(1.5) saturate(2);
+  animation: shake 0.2s infinite; /* Animación de vibración */
+  filter: sepia(0) contrast(1.5) saturate(2);
 }
 
 /* Animación de "vibración" por cafeína */
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    25% { transform: translate(-1px, -2px) rotate(-1deg); }
-    50% { transform: translate(-3px, 0px) rotate(1deg); }
-    75% { transform: translate(3px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -1px) rotate(1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  25% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  75% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
 }
 
 /* Estilo del botón de control */
 .btn-roast {
-    background: transparent;
-    color: var(--color-acento-secundario);
-    border: 1px solid var(--color-acento-secundario);
-    font-family: var(--font-titulos);
-    padding: 8px 15px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
+  background: transparent;
+  color: var(--color-acento-secundario);
+  border: 1px solid var(--color-acento-secundario);
+  font-family: var(--font-titulos);
+  padding: 8px 15px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
 }
 
 .btn-roast:hover {
-    background: var(--color-acento-secundario);
-    color: var(--color-fondo-principal);
+  background: var(--color-acento-secundario);
+  color: var(--color-fondo-principal);
 }
-
 
 /* Estilos para el Modal de Terminal */
 .terminal-overlay {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
 }
 
 .terminal-window {
-    width: 90%;
-    max-width: 600px;
-    background: #000;
-    border: 2px solid var(--color-acento-primario);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(210, 105, 30, 0.4);
+  width: 90%;
+  max-width: 600px;
+  background: #000;
+  border: 2px solid var(--color-acento-primario);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(210, 105, 30, 0.4);
 }
 
 .terminal-header {
-    background: var(--color-acento-primario);
-    color: var(--color-text-muted);
-    padding: 8px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--font-titulos);
-    font-weight: bold;
-    font-size: 2rem;
+  background: var(--color-acento-primario);
+  color: var(--color-text-muted);
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-titulos);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .terminal-header button {
-    background: none;
-    border: none;
-    color: var(--color-fondo-principal);
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--color-fondo-principal);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .terminal-body {
-    padding: 20px;
-    height: 300px;
-    overflow-y: auto;
-    font-family: var(--font-titulos);
-    color: var(--color-acento-secundario);
-    font-size: 1.4rem; /* Basado en tu 10px base */
+  padding: 20px;
+  height: 300px;
+  overflow-y: auto;
+  font-family: var(--font-titulos);
+  color: var(--color-acento-secundario);
+  font-size: 1.4rem; /* Basado en tu 10px base */
 }
 
 .terminal-body p {
-    margin-bottom: 8px;
-    border-right: 2px solid var(--color-acento-secundario);
-    width: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 0.5s steps(30, end);
+  margin-bottom: 8px;
+  border-right: 2px solid var(--color-acento-secundario);
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 0.5s steps(30, end);
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-
 .profile-body {
-    position: relative; /* Necesario para que la capa virtual se posicione bien */
-    min-height: 100vh;
-    background-color: var(--color-fondo-principal); /* El color oscuro base */
-    overflow-x: hidden;
+  position: relative; /* Necesario para que la capa virtual se posicione bien */
+  min-height: 100vh;
+  background-color: var(--color-fondo-principal); /* El color oscuro base */
+  overflow-x: hidden;
 }
 
 .profile-body::before {
-    content: "";
-    position: fixed; /* Se queda quieto mientras se hace scroll */
-    top: -10%;
-    left: -10%;
-    /* transform: translate(-50%, -50%); Centrado perfecto */
-    width: 60vmax; /* Tamaño grande relativo a la pantalla */
-    height: 60vmax;
-    
-    /* Referencia al archivo logo */
-    background-image: url('../img/logo.png'); 
-    background-size: contain;
-    opacity: 0.05; 
-    filter: grayscale(100%); 
-    z-index: -1;
-    pointer-events: none; /* Para que no interfiera con los clics */
-}
+  content: "";
+  position: fixed; /* Se queda quieto mientras se hace scroll */
+  top: -10%;
+  left: -10%;
+  /* transform: translate(-50%, -50%); Centrado perfecto */
+  width: 60vmax; /* Tamaño grande relativo a la pantalla */
+  height: 60vmax;
 
+  /* Referencia al archivo logo */
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  opacity: 0.05;
+  filter: grayscale(100%);
+  z-index: -1;
+  pointer-events: none; /* Para que no interfiera con los clics */
+}
 
 /* --- ESTILOS DEL TOOLTIP BARISTA --- */
 
 #barista-tooltip {
-    /* Posicionamiento */
-    position: absolute;
-    display: none; 
-    z-index: 10000;
-    max-width: 300px;
-    padding: 15px;
-    flex-direction: row;
-    gap: 2rem;
-    
-    background-color: rgba(0, 0, 0, 0.9);
-    color: var(--color-acento-secundario); 
-    border: 1px solid var(--color-acento-primario); 
-    border-radius: 4px;
-    
-    /* Tipografía y Texto */
-    font-family: var(--font-titulos); /* Space Mono */
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-align: left;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    pointer-events: none; /* Para que el tooltip no interfiera con el mouse */
-    transition: opacity 0.2s ease-in-out;
+  /* Posicionamiento */
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  max-width: 300px;
+  padding: 15px;
+  flex-direction: row;
+  gap: 2rem;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--color-acento-secundario);
+  border: 1px solid var(--color-acento-primario);
+  border-radius: 4px;
+
+  /* Tipografía y Texto */
+  font-family: var(--font-titulos); /* Space Mono */
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  pointer-events: none; /* Para que el tooltip no interfiera con el mouse */
+  transition: opacity 0.2s ease-in-out;
 }
 
 .tooltip-img {
-    width: 15rem;
-    height: auto;
-    max-height: 15rem;
-    object-fit: cover;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid var(--color-acento-primario);
+  width: 15rem;
+  height: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-acento-primario);
 }
 
 .tooltip-text {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.3;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
 }
 
 /* Estilo para los ítems que tienen información */
 [data-id] {
-    cursor: help; /* Cambia el cursor a un signo de pregunta */
-    transition: color 0.3s ease;
+  cursor: help; /* Cambia el cursor a un signo de pregunta */
+  transition: color 0.3s ease;
 }
 
 [data-id]:hover {
-    color: var(--color-acento-primario); 
+  color: var(--color-acento-primario);
 }
-
-
 
 /* ============================================================
    BREAKPOINTS (DISEÑO RESPONSIVO)
@@ -370,73 +382,69 @@ h1, h2, h3, label {
 
 /* 1. MÓVILES PEQUEÑOS (Hasta 400px) */
 @media (max-width: 400px) {
-    .id-card {
-        margin: 1rem;
-        width: calc(100% - 2rem);
-        font-size: 1rem;
-    }
+  .id-card {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    font-size: 1rem;
+  }
 
-    .photo-frame {
-        width: 120px;
-        height: 120px;
-    }
+  .photo-frame {
+    width: 120px;
+    height: 120px;
+  }
 
-    .card-header{
-        flex-direction: column;
-        
-    }
-    .system-tag {
-        font-size: 1.2rem; 
-        width:120px;
-        text-align: right;
-    }
-    
-
+  .card-header {
+    flex-direction: column;
+  }
+  .system-tag {
+    font-size: 1.2rem;
+    width: 120px;
+    text-align: right;
+  }
 }
 
 /* 2. TABLETS O PANTALLAS MEDIANAS (Hasta 900px) */
-   
+
 @media (max-width: 900px) {
-    .card-content {
-        flex-direction: column;
-        align-items: center; 
-    }
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .system-tag {
-        font-size: 1.2rem; 
-        width:60px;
-        text-align: right;
-    }
+  .system-tag {
+    font-size: 1.2rem;
+    width: 60px;
+    text-align: right;
+  }
 
-    .photo-section {
-        border-right: none;
-        padding: 20px;
-    }
+  .photo-section {
+    border-right: none;
+    padding: 20px;
+  }
 
-    .info-section {
-        padding: 20px;
-    }
+  .info-section {
+    padding: 20px;
+  }
 
-    .extra-info {
-        flex-direction: column; /* Las listas de pelis y discos también se apilan */
-        gap: 10px;
-        
-    }
+  .extra-info {
+    flex-direction: column; /* Las listas de pelis y discos también se apilan */
+    gap: 10px;
+  }
 }
 
 /* 3. ESCRITORIOS GRANDES (Desde 1200px en adelante) */
 @media (min-width: 1200px) {
-    .id-card {
-        max-width: 1000px; /* La tarjeta se puede expandir más */
-        box-shadow: 0 0 40px rgba(210, 105, 30, 0.4); /* Brillo más intenso */
-    }
+  .id-card {
+    max-width: 1000px; /* La tarjeta se puede expandir más */
+    box-shadow: 0 0 40px rgba(210, 105, 30, 0.4); /* Brillo más intenso */
+  }
 
-    .info-section {
-        font-size: 1.4rem; /* Aumentamos un poco la legibilidad */
-    }
+  .info-section {
+    font-size: 1.4rem; /* Aumentamos un poco la legibilidad */
+  }
 
-    .photo-frame {
-        width: 220px; /* Foto más imponente */
-        height: 220px;
-    }
+  .photo-frame {
+    width: 220px; /* Foto más imponente */
+    height: 220px;
+  }
 }
