@@ -10,7 +10,7 @@ Viste un delantal de barista de lona marrón oscuro sobre su ropa casual.
 
 El delantal tiene un pequeño parche bordado con un icono de un grano de café y los símbolos < >. ES IMPORTANTE que el grano de café se encuentre entre ambos signos < grano >.
 
-Sostiene [[INSERTAR ELEMENTO TECNOLÓGICO ACÁ (ej: notebook, tablet, etc ]] en una mano y [[INSERTAR ELEMENTO DE CAFETERIA ACÁ (ej: taza de café, molinillo, etc]] en la otra, con una expresión concentrada y amable.
+Sostiene [[INSERTAR ELEMENTO TECNOLÓGICO ACÁ (ej: notebook, tablet, etc]] en una mano y [[INSERTAR ELEMENTO DE CAFETERIA ACÁ (ej: taza de café, molinillo, etc]] en la otra, con una expresión concentrada y amable.
 
 ENTORNO (FONDO):
 
@@ -25,7 +25,6 @@ ILUMINACIÓN Y ESTILO:
 Iluminación cinemática cálida y suave.
 
 Estilo de arte conceptual limpio, con texturas ricas en el delantal y la madera. Mantén el parecido facial de la foto original.
-
 
 ### Prompt para el diseño del logo
 
@@ -50,7 +49,6 @@ Colores sugeridos:
 Marrón oscuro, negro, beige, ocre o tonos café.
 Puede incluir detalles en color claro para contraste.
 Debe mantener una paleta sobria y armónica.
-
 
 ### Prompt para notas de cata de películas y discos:
 
