@@ -97,7 +97,13 @@ Lo cual garantizó lo siguiente:
 - **Orden de Carga**: Primero traemos los componentes externos (Navbar, Footer) y, solo cuando están presentes, activamos su interactividad (menú hamburguesa, tooltips).
 - **Prevención de Errores**: Eliminamos los errores de tipo null porque garantizamos que los IDs que busca el script ya están dibujados en la pantalla.
 
-- **Imágenes:** Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones. 
+Utilizamos el mismo agente para la redacción de las descripciones de las películas(films) y discos (discs). Solicitamos a Gemini que analice la personalidad de la película o disco para asignarle una descripción que encajara con el estilo café/code con un toque de humor (ej: John Wick es un tostado oscuro e intenso). 
+
+
+
+
+### Imágenes: 
+Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones. 
   - [Modelo y criterio de prompt](./docs/prompt.md)
 
 
