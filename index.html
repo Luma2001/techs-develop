@@ -1,423 +1,481 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CDN de Tabler Icons para iconos modernos -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./js/index.js" defer></script>
-    <title>Bienvenido a The Coffee-Code Engine</title>
-  </head>
-  <body class="default">
-    <div id="navbar-container"></div>
-    <!-- Hero section -->
-    <div id="runtime"></div>
-    <section class="hero">
-      <!-- Logo y CTA -->
-      <div class="hero-content">
-        <div class="hero-logo-container">
-          <img
-            src="./img/logo.png"
-            alt="Logo The Coffee-Code Engine"
-            class="hero-logo"
-          />
-        </div>
-        <div class="hero-text-container">
-          <h1 class="hero-title">The Coffee-Code Engine</h1>
-          <p class="hero-subtitle">
-            Desarrollo de software con aroma a café tostado.
-          </p>
-          <div class="hero-actions">
-            <a href="#terminal" class="btn-primary">Hacé tu pedido</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Terminal -->
-      <div class="hero-visual">
-        <div class="terminal">
-          <div class="card-header">
-            <p>THE COFFE-CODE ENGINE</p>
-            <p class="file-name">./main.js</p>
-          </div>
-          <div class="terminal-log">
-            <p class="hidden-line">
-              [SYSTEM] : Iniciando the_coffe-code_engine.sh ...
-            </p>
-            <p class="hidden-line">[SYSTEM] : Niveles de cafeína al 85 %</p>
-            <p class="hidden-line">[SYSTEM] : Listos para compilar</p>
-          </div>
-          <div class="terminal-accent">
-            <p id="typewriter-text"></p>
-            <p id="cursor-line">$ > <span class="terminal-cursor">|</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección B: The Brewing Process -->
-    <div id="brew"></div>
-    <section class="brewing-section">
-      <div class="brewing-container">
-        <!-- Titulo de sección -->
-        <div class="brewing-header">
-          <h2 class="brewing-title">The Brewing Process</h2>
-          <p class="brewing-subtitle">
-            Cómo transformamos granos en algoritmos
-          </p>
-        </div>
-
-        <!-- Contenido Principal -->
-        <div class="brewing-content">
-          <div class="brewing-text">
-            <p class="brewing-description">
-              Nuestro enfoque se basa en la
-              <span class="highlight"
-                >extracción en frío de soluciones complejas</span
-              >. Al igual que un buen espresso, creemos que el código debe ser
-              <span class="highlight"
-                >corto, fuerte y sin residuos innecesarios</span
-              >.
-            </p>
-
-            <div class="brewing-methodology">
-              <div class="method-item">
-                <span class="method-number">01</span>
-                <div class="method-content">
-                  <h4 class="method-title">Selección Premium</h4>
-                  <p class="method-text">
-                    Elegimos las tecnologías más frescas, filtradas y probadas
-                    en el mercado.
-                  </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CDN de Tabler Icons para iconos modernos -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script type="module" src="./js/index.js" defer></script>
+        <title>Bienvenido a The Coffee-Code Engine</title>
+    </head>
+    <body class="default">
+        <div id="navbar-container"></div>
+        <!-- Hero section -->
+        <div id="runtime"></div>
+        <section class="hero">
+            <!-- Logo y CTA -->
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <img
+                        src="./img/logo.png"
+                        alt="Logo The Coffee-Code Engine"
+                        class="hero-logo"
+                    />
                 </div>
-              </div>
-
-              <div class="method-item">
-                <span class="method-number">02</span>
-                <div class="method-content">
-                  <h4 class="method-title">Tostado Perfecto</h4>
-                  <p class="method-text">
-                    Aplicamos la cantidad exacta de "fuego" para que tu proyecto
-                    destaque sin quemarse.
-                  </p>
+                <div class="hero-text-container">
+                    <h1 class="hero-title">The Coffee-Code Engine</h1>
+                    <p class="hero-subtitle">
+                        Desarrollo de software con aroma a café tostado.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#terminal" class="btn-primary"
+                            >Hacé tu pedido</a
+                        >
+                    </div>
                 </div>
-              </div>
-
-              <div class="method-item">
-                <span class="method-number">03</span>
-                <div class="method-content">
-                  <h4 class="method-title">Molienda Precisa</h4>
-                  <p class="method-text">
-                    Cada detalle importa. Afinamos cada componente hasta la
-                    perfección.
-                  </p>
-                </div>
-              </div>
-
-              <div class="method-item">
-                <span class="method-number">04</span>
-                <div class="method-content">
-                  <h4 class="method-title">Extracción Óptima</h4>
-                  <p class="method-text">
-                    El resultado final: soluciones robustas, eficientes y libres
-                    de bloatware.
-                  </p>
-                </div>
-              </div>
             </div>
 
-            <p class="brewing-todo">
-              <span class="code-comment">// TODO:</span> Preparar la mejor taza
-              de código
-            </p>
-          </div>
-
-          <div class="brewing-visual">
-            <div class="brewing-diagram">
-              <div class="brewing-step step-1">
-                <div class="step-icon">
-                  <!-- Icono taza de café -->
-                  <i class="ti ti-coffee brew"></i>
+            <!-- Terminal -->
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="card-header">
+                        <p>THE COFFE-CODE ENGINE</p>
+                        <p class="file-name">./main.js</p>
+                    </div>
+                    <div class="terminal-log">
+                        <p class="hidden-line">
+                            [SYSTEM] : Iniciando the_coffe-code_engine.sh ...
+                        </p>
+                        <p class="hidden-line">
+                            [SYSTEM] : Niveles de cafeína al 85 %
+                        </p>
+                        <p class="hidden-line">
+                            [SYSTEM] : Listos para compilar
+                        </p>
+                    </div>
+                    <div class="terminal-accent">
+                        <p id="typewriter-text"></p>
+                        <p id="cursor-line">
+                            $ > <span class="terminal-cursor">|</span>
+                        </p>
+                    </div>
                 </div>
-                <p class="step-label">Grano</p>
-              </div>
-              <div class="brewing-arrow">→</div>
-              <div class="brewing-step step-2">
-                <div class="step-icon">
-                  <!-- LLama de Fuego -->
-                  <i class="ti ti-flame brew"></i>
-                </div>
-                <p class="step-label">Tostado</p>
-              </div>
-              <div class="brewing-arrow">→</div>
-              <div class="brewing-step step-3">
-                <div class="step-icon">
-                  <!-- Tuerca -->
-                  <i class="ti ti-settings brew animate-spin"></i>
-                </div>
-                <p class="step-label">Molido</p>
-              </div>
-              <div class="brewing-arrow">→</div>
-              <div class="brewing-step step-4">
-                <div class="step-icon">
-                  <!-- Icono de Código -->
-                  <i class="ti ti-code brew"></i>
-                </div>
-                <p class="step-label">Compilado</p>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Sección de Equipo -->
-    <div id="source">
-      <br />
-    </div>
-    <section class="team-section">
-      <h2 class="section-title">Nuestro Equipo: Barista-Devs</h2>
-      <p class="section-subtitle">Expertos en mezclar cafeína y código</p>
-
-      <div class="team-grid">
-        <!-- Tarjeta 1: Lead Barista Backend -->
-        <div class="id-card">
-          <img
-            src="./img/backend-dev.jpg"
-            alt="Avatar Backend Dev"
-            class="card-image"
-          />
-          <div class="card-overlay">
-            <h3 class="member-name" data-team-member>Lean Backend Brewer</h3>
-            <p class="member-role">Lead Barista Backend</p>
-            <a href="backend-dev.html" class="btn-profile">[ Cargar Perfil ]</a>
-          </div>
-        </div>
-
-        <!-- Tarjeta 2: QA Taster -->
-        <div class="id-card">
-          <img
-            src="./img/qa-tester-crop.jpeg"
-            alt="Avatar QA Dev"
-            class="card-image"
-          />
-          <div class="card-overlay">
-            <h3 class="member-name" data-team-member>Naty Coffee Debugger</h3>
-            <p class="member-role">QA Taster & Latte Art Artist</p>
-            <a href="qa-taster-frontend-latte-artist.html" class="btn-profile"
-              >[ Cargar Perfil ]</a
-            >
-          </div>
-        </div>
-
-        <!-- Tarjeta 3: Full-Stack Roaster -->
-        <div class="id-card">
-          <img
-            src="./img/fsr-crop.png"
-            alt="Avatar Full-Stack Dev"
-            class="card-image"
-          />
-          <div class="card-overlay">
-            <h3 class="member-name" data-team-member>Luma Blend Maker</h3>
-            <p class="member-role">Full-Stack Roaster</p>
-            <a href="full-stack-roaster.html" class="btn-profile"
-              >[ Cargar Perfil ]</a
-            >
-          </div>
-        </div>
-
-        <!-- Tarjeta 4: DevOps Supply Chain -->
-        <div class="id-card">
-          <img
-            src="./img/devops-supply.jpg"
-            alt="Avatar DevOps Dev"
-            class="card-image"
-          />
-          <div class="card-overlay">
-            <h3 class="member-name" data-team-member>Dany Deploy Keeper</h3>
-            <p class="member-role">DevOps Supply Chain Manager</p>
-            <a href="devops-supply-chain.html" class="btn-profile"
-              >[ Cargar Perfil ]</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección de Formulario de Contacto / Orden de Pedido -->
-    <div id="terminal"></div>
-    <section class="order-section">
-      <div class="order-container">
-        <div class="order-header">
-          <h2 class="order-title">Compilá Tu Orden</h2>
-          <p class="order-subtitle">
-            Solicitá tu blend personalizado y nos pondremos en contacto
-          </p>
-        </div>
-
-        <form class="order-form" id="contact-form">
-          <div class="form-grid">
-            <!-- Columna 1: Selecciones -->
-            <div class="form-column">
-              <!-- Tipo de Blend (select) -->
-              <div class="form-group">
-                <label for="blend-type" class="form-label">
-                  <span class="label-icon">
-                    <i class="ti ti-coffee"></i>
-                  </span>
-                  Tipo de Blend
-                </label>
-                <select
-                  id="blend-type"
-                  name="blend-type"
-                  class="form-input"
-                  required
-                >
-                  <option value="">-- Seleccionar --</option>
-                  <option value="frontend">Frontend Fresco</option>
-                  <option value="backend">Backend Tostado</option>
-                  <option value="fullstack">Full-Stack Blend</option>
-                  <option value="devops">DevOps Intenso</option>
-                </select>
-              </div>
-
-              <!-- Intensidad / Tamaño (select) -->
-              <div class="form-group">
-                <label for="intensity" class="form-label">
-                  <span class="label-icon">
-                    <i class="ti ti-flame"></i>
-                  </span>
-                  Intensidad
-                </label>
-                <select
-                  id="intensity"
-                  name="intensity"
-                  class="form-input"
-                  required
-                >
-                  <option value="">-- Seleccionar --</option>
-                  <option value="small">Small (Startup)</option>
-                  <option value="medium">Medium (Company)</option>
-                  <option value="large">Large (Enterprise)</option>
-                  <option value="overheated">Overheated (Ultra)</option>
-                </select>
-              </div>
-
-              <!-- Email -->
-              <div class="form-group">
-                <label for="email" class="form-label">
-                  <span class="label-icon">
-                    <i class="ti ti-mail"></i>
-                  </span>
-                  Tu Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="dev@cafecode.com"
-                  required
-                />
-              </div>
-            </div>
-
-            <!-- Columna 2: Extras y Mensaje -->
-            <div class="form-column">
-              <!-- Extras (checkboxes) -->
-              <div class="form-group">
-                <label class="form-label">
-                  <span class="label-icon">
-                    <i class="ti ti-plus"></i>
-                  </span>
-                  Extras & Features
-                </label>
-                <div class="checkbox-group">
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="extras"
-                      value="async"
-                      class="checkbox-input"
-                    />
-                    <span class="checkbox-text">Async/Await</span>
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="extras"
-                      value="error-handling"
-                      class="checkbox-input"
-                    />
-                    <span class="checkbox-text">Error Handling</span>
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="extras"
-                      value="ci-cd"
-                      class="checkbox-input"
-                    />
-                    <span class="checkbox-text">CI/CD Pipeline</span>
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="extras"
-                      value="testing"
-                      class="checkbox-input"
-                    />
-                    <span class="checkbox-text">Unit Testing</span>
-                  </label>
+        <!-- Sección B: The Brewing Process -->
+        <div id="brew"></div>
+        <section class="brewing-section">
+            <div class="brewing-container">
+                <!-- Titulo de sección -->
+                <div class="brewing-header">
+                    <h2 class="brewing-title">The Brewing Process</h2>
+                    <p class="brewing-subtitle">
+                        Cómo transformamos granos en algoritmos
+                    </p>
                 </div>
-              </div>
 
-              <!-- Mensaje -->
-              <div class="form-group">
-                <label for="message" class="form-label">
-                  <span class="label-icon">
-                    <i class="ti ti-message"></i>
-                  </span>
-                  Especificaciones
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-input textarea-input"
-                  placeholder="Contanos qué necesitás...Soporte 24/7? Consultoría personalizada? Dejanos saber."
-                  rows="4"
-                ></textarea>
-              </div>
+                <!-- Contenido Principal -->
+                <div class="brewing-content">
+                    <div class="brewing-text">
+                        <p class="brewing-description">
+                            Nuestro enfoque se basa en la
+                            <span class="highlight"
+                                >extracción en frío de soluciones
+                                complejas</span
+                            >. Al igual que un buen espresso, creemos que el
+                            código debe ser
+                            <span class="highlight"
+                                >corto, fuerte y sin residuos innecesarios</span
+                            >.
+                        </p>
+
+                        <div class="brewing-methodology">
+                            <div class="method-item">
+                                <span class="method-number">01</span>
+                                <div class="method-content">
+                                    <h4 class="method-title">
+                                        Selección Premium
+                                    </h4>
+                                    <p class="method-text">
+                                        Elegimos las tecnologías más frescas,
+                                        filtradas y probadas en el mercado.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <span class="method-number">02</span>
+                                <div class="method-content">
+                                    <h4 class="method-title">
+                                        Tostado Perfecto
+                                    </h4>
+                                    <p class="method-text">
+                                        Aplicamos la cantidad exacta de "fuego"
+                                        para que tu proyecto destaque sin
+                                        quemarse.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <span class="method-number">03</span>
+                                <div class="method-content">
+                                    <h4 class="method-title">
+                                        Molienda Precisa
+                                    </h4>
+                                    <p class="method-text">
+                                        Cada detalle importa. Afinamos cada
+                                        componente hasta la perfección.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <span class="method-number">04</span>
+                                <div class="method-content">
+                                    <h4 class="method-title">
+                                        Extracción Óptima
+                                    </h4>
+                                    <p class="method-text">
+                                        El resultado final: soluciones robustas,
+                                        eficientes y libres de bloatware.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="brewing-todo">
+                            <span class="code-comment">// TODO:</span> Preparar
+                            la mejor taza de código
+                        </p>
+                    </div>
+
+                    <div class="brewing-visual">
+                        <div class="brewing-diagram">
+                            <!-- Icono taza de café -->
+                            <div class="brewing-step step-1">
+                                <div class="step-icon">
+                                    <i class="ti ti-coffee brew"></i>
+                                </div>
+                                <p class="step-label">Grano</p>
+                            </div>
+                            <div class="brewing-arrow">→</div>
+                            <div class="brewing-step step-2">
+                                <div class="step-icon">
+                                    <!-- LLama de Fuego -->
+                                    <i class="ti ti-flame brew"></i>
+                                </div>
+                                <p class="step-label">Tostado</p>
+                            </div>
+                            <div class="brewing-arrow">→</div>
+                            <div class="brewing-step step-3">
+                                <div class="step-icon">
+                                    <!-- Tuerca -->
+                                    <i
+                                        class="ti ti-settings brew animate-spin"
+                                    ></i>
+                                </div>
+                                <p class="step-label">Molido</p>
+                            </div>
+                            <div class="brewing-arrow">→</div>
+                            <div class="brewing-step step-4">
+                                <div class="step-icon">
+                                    <!-- Icono de Código -->
+                                    <i class="ti ti-code brew"></i>
+                                </div>
+                                <p class="step-label">Compilado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <!-- Botón de acción -->
-          <div class="form-actions">
-            <button type="submit" class="btn-submit">
-              <span class="btn-icon">
-                <i class="ti ti-chevrons-right muted"></i>
-              </span>
-              enviar pedido
-            </button>
-            <span class="form-note"
-              >Tu información está segura con nosotros</span
-            >
-          </div>
-        </form>
-      </div>
-    </section>
+        <!-- Sección de Equipo -->
+        <div id="source">
+            <br />
+        </div>
+        <section class="team-section">
+            <h2 class="section-title">Nuestro Equipo: Barista-Devs</h2>
+            <p class="section-subtitle">Expertos en mezclar cafeína y código</p>
 
-    <div id="footer-container"></div>
-  </body>
+            <div class="team-grid">
+                <!-- Tarjeta 1: Lead Barista Backend -->
+                <div class="id-card">
+                    <img
+                        src="./img/backend-dev.jpg"
+                        alt="Avatar Backend Dev"
+                        class="card-image"
+                    />
+                    <div class="card-overlay">
+                        <h3 class="member-name" data-team-member>
+                            Lean Backend Brewer
+                        </h3>
+                        <p class="member-role">Lead Barista Backend</p>
+                        <a href="backend-dev.html" class="btn-profile"
+                            >[ Cargar Perfil ]</a
+                        >
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: QA Taster -->
+                <div class="id-card">
+                    <img
+                        src="./img/qa-tester-crop.jpeg"
+                        alt="Avatar QA Dev"
+                        class="card-image"
+                    />
+                    <div class="card-overlay">
+                        <h3 class="member-name" data-team-member>
+                            Naty Coffee Debugger
+                        </h3>
+                        <p class="member-role">QA Taster & Latte Art Artist</p>
+                        <a
+                            href="qa-taster-frontend-latte-artist.html"
+                            class="btn-profile"
+                            >[ Cargar Perfil ]</a
+                        >
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Full-Stack Roaster -->
+                <div class="id-card">
+                    <img
+                        src="./img/fsr-crop.png"
+                        alt="Avatar Full-Stack Dev"
+                        class="card-image"
+                    />
+                    <div class="card-overlay">
+                        <h3 class="member-name" data-team-member>
+                            Luma Blend Maker
+                        </h3>
+                        <p class="member-role">Full-Stack Roaster</p>
+                        <a href="full-stack-roaster.html" class="btn-profile"
+                            >[ Cargar Perfil ]</a
+                        >
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: DevOps Supply Chain -->
+                <div class="id-card">
+                    <img
+                        src="./img/devops-supply.jpg"
+                        alt="Avatar DevOps Dev"
+                        class="card-image"
+                    />
+                    <div class="card-overlay">
+                        <h3 class="member-name" data-team-member>
+                            Dany Deploy Keeper
+                        </h3>
+                        <p class="member-role">DevOps Supply Chain Manager</p>
+                        <a href="devops-supply-chain.html" class="btn-profile"
+                            >[ Cargar Perfil ]</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Formulario de Contacto / Orden de Pedido -->
+        <div id="terminal"></div>
+        <section class="order-section">
+            <div class="order-container">
+                <div class="order-header">
+                    <h2 class="order-title">Compilá Tu Orden</h2>
+                    <p class="order-subtitle">
+                        Solicitá tu blend personalizado y nos pondremos en
+                        contacto
+                    </p>
+                </div>
+
+                <form class="order-form" id="contact-form">
+                    <div class="form-grid">
+                        <!-- Columna 1: Selecciones -->
+                        <div class="form-column">
+                            <!-- Tipo de Blend (select) -->
+                            <div class="form-group">
+                                <label for="blend-type" class="form-label">
+                                    <span class="label-icon">
+                                        <i class="ti ti-coffee"></i>
+                                    </span>
+                                    Tipo de Blend
+                                </label>
+                                <select
+                                    id="blend-type"
+                                    name="blend-type"
+                                    class="form-input"
+                                    required
+                                >
+                                    <option value="">-- Seleccionar --</option>
+                                    <option value="frontend">
+                                        Frontend Fresco
+                                    </option>
+                                    <option value="backend">
+                                        Backend Tostado
+                                    </option>
+                                    <option value="fullstack">
+                                        Full-Stack Blend
+                                    </option>
+                                    <option value="devops">
+                                        DevOps Intenso
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Intensidad / Tamaño (select) -->
+                            <div class="form-group">
+                                <label for="intensity" class="form-label">
+                                    <span class="label-icon">
+                                        <i class="ti ti-flame"></i>
+                                    </span>
+                                    Intensidad
+                                </label>
+                                <select
+                                    id="intensity"
+                                    name="intensity"
+                                    class="form-input"
+                                    required
+                                >
+                                    <option value="">-- Seleccionar --</option>
+                                    <option value="small">
+                                        Small (Startup)
+                                    </option>
+                                    <option value="medium">
+                                        Medium (Company)
+                                    </option>
+                                    <option value="large">
+                                        Large (Enterprise)
+                                    </option>
+                                    <option value="overheated">
+                                        Overheated (Ultra)
+                                    </option>
+                                </select>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <span class="label-icon">
+                                        <i class="ti ti-mail"></i>
+                                    </span>
+                                    Tu Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    placeholder="dev@cafecode.com"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Columna 2: Extras y Mensaje -->
+                        <div class="form-column">
+                            <!-- Extras (checkboxes) -->
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <span class="label-icon">
+                                        <i class="ti ti-plus"></i>
+                                    </span>
+                                    Extras & Features
+                                </label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            name="extras"
+                                            value="async"
+                                            class="checkbox-input"
+                                        />
+                                        <span class="checkbox-text"
+                                            >Async/Await</span
+                                        >
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            name="extras"
+                                            value="error-handling"
+                                            class="checkbox-input"
+                                        />
+                                        <span class="checkbox-text"
+                                            >Error Handling</span
+                                        >
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            name="extras"
+                                            value="ci-cd"
+                                            class="checkbox-input"
+                                        />
+                                        <span class="checkbox-text"
+                                            >CI/CD Pipeline</span
+                                        >
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            name="extras"
+                                            value="testing"
+                                            class="checkbox-input"
+                                        />
+                                        <span class="checkbox-text"
+                                            >Unit Testing</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Mensaje -->
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <span class="label-icon">
+                                        <i class="ti ti-message"></i>
+                                    </span>
+                                    Especificaciones
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-input textarea-input"
+                                    placeholder="Contanos qué necesitás...Soporte 24/7? Consultoría personalizada? Dejanos saber."
+                                    rows="4"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botón de acción -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-icon">
+                                <i class="ti ti-chevrons-right muted"></i>
+                            </span>
+                            enviar pedido
+                        </button>
+                        <span class="form-note"
+                            >Tu información está segura con nosotros</span
+                        >
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div id="footer-container"></div>
+    </body>
 </html>

@@ -476,8 +476,8 @@ body.default {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    flex-wrap: wrap;
-    padding: 2rem;
+    flex-wrap: nowrap;
+    padding: 1rem;
     background: var(--color-fondo-principal-80);
     border: 2px solid var(--color-text-muted);
     border-radius: 1em;
