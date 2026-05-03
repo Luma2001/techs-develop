@@ -1,0 +1,36 @@
+{
+  "media": {
+    "mib3": {
+      "text": "Un blend de otro mundo. Notas de café espresso clásico con un toque de pug-nacidad. Cuerpo pequeño pero con una presencia que domina la galaxia.",
+      "image": "img/media-dani/mib3.png"
+    },
+    "marley": {
+      "text": "Un café caótico pero reconfortante. Notas de travesura y un final persistente que te llena el corazón.",
+      "image": "img/media-dani/marley.png"
+    },
+    "hachiko": {
+      "text": "Esencia pura de lealtad. Un tueste que espera pacientemente, con notas profundas y un aroma eterno.",
+      "image": "img/media-dani/hachiko.png"
+    },
+    "wick": {
+      "text": "Intenso, oscuro y sin piedad. Un blend con cuerpo robusto diseñado para quienes no se rinden ante la injusticia.",
+      "image": "img/media-dani/john-wick.png"
+    },
+    "animals": {
+      "text": "Un blend industrial y complejo. Notas de chocolate amargo con un postgusto metálico. Un tueste progresivo que evoluciona en cada sorbo.",
+      "image": "img/media-dani/pink-floyd-animals.png"
+    },
+    "abbey": {
+      "text": "Equilibrio perfecto. Notas clásicas de vainilla y madera. Un café de mañana soleada que todo el mundo reconoce al instante.",
+      "image": "img/media-dani/beatles-abbey.png"
+    },
+    "pet-sounds": {
+      "text": "Cuerpo ligero y texturas armónicas. Notas cítricas y experimentales. Una taza que se siente como una sinfonía de verano.",
+      "image": "img/media-dani/beach-boys-pets.png"
+    },
+    "nevermind": {
+      "text": "Tostado fuerte y rebelde. Notas de tierra y frescura acuática. Un blend que rompió los esquemas del mercado tradicional.",
+      "image": "img/media-dani/nirvana-nevermind.png"
+    }
+  }
+}
