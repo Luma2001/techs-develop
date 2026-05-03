@@ -1,6 +1,6 @@
 # Desarrollo de Sistemas Web (Front End) - 2° D
 ## TP Grupal N°1 - Grupo N°1: "The Coffee-Code Engine"
-## [Link del deploy]()
+## [Link del deploy](https://the-coffee-code-engine.vercel.app/)
 
 ## Descripción del Proyecto
 La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Agencia de Desarrollo de Software que opera bajo la lógica y estética de una Cafetería de Especialidad. Se busca fusionar el rigor técnico (interfaces de terminal, sintaxis de código) con el humor centrado en la cultura "dev" (dependencia a la cafeína, resolución de bugs y jerga técnica).
@@ -97,6 +97,7 @@ Lo cual garantizó lo siguiente:
 - **Orden de Carga**: Primero traemos los componentes externos (Navbar, Footer) y, solo cuando están presentes, activamos su interactividad (menú hamburguesa, tooltips).
 - **Prevención de Errores**: Eliminamos los errores de tipo null porque garantizamos que los IDs que busca el script ya están dibujados en la pantalla.
 
+
 ### Uso en recursos visuales
 
 Avatares: Se utilizó IA para generar los avatares de los integrantes. El objetivo fue construir una estética visual coherente con la identidad general de The Coffee-Code Engine, combinando el universo de la cafetería de especialidad con el mundo del desarrollo web.
@@ -118,6 +119,7 @@ Luego, los textos fueron revisados y adaptados por el equipo para que mantuviera
 Herramientas utilizadas: ChatGPT
 
 Los prompts base utilizados para avatares, logo y notas de cata se documentan en [prompt.md](./docs/prompt.md).
+
 
 
 
