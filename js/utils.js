@@ -1,4 +1,36 @@
 export const utils = {
+    initializeNavbar: function() {
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const navMenu = document.getElementById("nav-menu");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        if (hamburgerMenu) {
+            hamburgerMenu.addEventListener("click", () => {
+                hamburgerMenu.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            // Cerrar el menú cuando se hace click en un link
+            navLinks.forEach((link) => {
+                link.addEventListener("click", () => {
+                    hamburgerMenu.classList.remove("active");
+                    navMenu.classList.remove("active");
+                });
+            });
+
+            // Cerrar el menú cuando se hace click fuera
+            document.addEventListener("click", (e) => {
+                if (
+                    !e.target.closest(".os-navbar") &&
+                    hamburgerMenu.classList.contains("active")
+                ) {
+                    hamburgerMenu.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }
+            });
+        }
+    },//fin initializeNavbar
+
     actualizarRelog(){
         const contenedorHora = document.getElementById('current-time');
         if(!contenedorHora) return;
@@ -8,19 +40,20 @@ export const utils = {
         const minutos = String(ahora.getMinutes()).padStart(2, '0');
         const segundos = String(ahora.getSeconds()).padStart(2, '0');
         contenedorHora.textContent = `${horas}:${minutos}:${segundos}`;
-    },
+    },//fin actualizarRelog
 
     loadNavbar: async function() {
         const response = await fetch("./navbar.html");
         const text = await response.text();
         document.getElementById("navbar-container").innerHTML = text;
-    },
+        this.initializeNavbar(); // Inicializar el navbar después de cargarlo
+    },//fin loadNavbar
 
     loadFooter: async function() {
         const response = await fetch("./footer.html");
         const text = await response.text();
         document.getElementById("footer-container").innerHTML = text;
-    },
+    },//fin loadFooter
 
     printLog: async function(message, targetElement,delay = 1000) {
         
@@ -36,7 +69,7 @@ export const utils = {
         targetElement.scrollTop = targetElement.scrollHeight;
 
         return new Promise(resolve => setTimeout(resolve, delay));
-    },
+    },//fin printLog
 
     fetchMediaData: async function(path) {
         try {
@@ -48,7 +81,7 @@ export const utils = {
             console.error('Error al cargar el JSON:', error);
             return [];      
         } 
-    },
+    },//fin fetchMediaData
 
     toggleTooltip: function(isVisible, data = null, e = null) {
         const tooltip = document.getElementById('barista-tooltip');
@@ -72,6 +105,32 @@ export const utils = {
             tooltip.style.display = 'none';
             tooltip.innerHTML = '';
         }
-    }
-}
+    },//fin toggleTooltip
+
+    renderOtrosMiembros: async function(idActual) {
+        const container = document.getElementById("otros-miembros-container");
+        if (!container) return; // Si no existe el contenedor, no hace nada
+
+        try {
+            // Traemos los datos de los 4 integrantes
+            const response = await fetch('./data/equipo.json');
+            const data = await response.json();
+
+            // FILTRO: Excluimos a la persona de la ficha actual
+            const otros = data.miembros.filter(m => m.id !== idActual);
+
+            // Generamos el HTML para los 3 restantes
+            container.innerHTML = otros.map(m => `
+                <a href="${m.id}.html" class="card-miembro">
+                    <img src="${m.foto}" alt="${m.nombre}" class="foto-mini">
+                    <span>${m.nombre}</span>
+                </a>
+            `).join('');
+
+        } catch (error) {
+            console.error("Error cargando compañeros:", error);
+        }
+    }//fin renderOtrosMiembros
+    
+}//fin utils
 

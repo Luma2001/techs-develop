@@ -1,6 +1,6 @@
 # Desarrollo de Sistemas Web (Front End) - 2° D
 ## TP Grupal N°1 - Grupo N°1: "The Coffee-Code Engine"
-## Link del deploy
+## [Link del deploy]()
 
 ## Descripción del Proyecto
 La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Agencia de Desarrollo de Software que opera bajo la lógica y estética de una Cafetería de Especialidad. Se busca fusionar el rigor técnico (interfaces de terminal, sintaxis de código) con el humor centrado en la cultura "dev" (dependencia a la cafeína, resolución de bugs y jerga técnica).
@@ -27,14 +27,24 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 .
 ├── css/
 │   ├── styles.css                
-│   ├── footer.css            
-│   ├── hearder.css
-│   ├── main.css            
+│   ├── footer.css 
+│   ├── fsr.css           
+│   ├── index.css           
 │   └── nav.css            
 ├── data/
+│   ├── dany-data.json 
+│   ├── lean-data.json            
+│   ├── luma-data.json            
+│   └── naty-data.json 
 ├── img/
-├── js/  
+├── js/ 
+│   ├── utils.js 
+│   ├── fsr.js 
 │   └── index.js 
+├── footer.html 
+├── full-stack-roaster.html
+├── qa.html
+├── navbar.html
 ├── index.html
 └── README.md
 ```
@@ -42,38 +52,55 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 
 ## Guía de Estilos
 - **Paleta de Colores:** 
-    - *Fondo Principal*: #1A1A1A (Negro "Obsidiana" o Carbono).
-    - *Texto Principal*: #F5F5DC (Beige / Crema de café).
-    - *Acento Primario*: #D2691E (Naranja "Chocolate" / Tostado).
-    - *Acento Secundario*: #00FF41 (Verde "Matrix" para estados OK).
+    - *Fondo Principal*: ```#1A1A1A``` (Negro "Obsidiana" o Carbono).
+    - *Texto Principal*: ```#F5F5DC``` (Beige / Crema de café).
+    - *Acento Primario*: ```#D2691E``` (Naranja "Chocolate" / Tostado).
+    - *Acento Secundario*: ```#00FF41``` (Verde "Matrix" para estados OK).
+    -  *Fondo-principal-80*: ```#262626``` (Variante del fondo 1 tono mas claro)
+    -  *Fondo-principal-60*: ```#333``` (Variante del fondo 2 tonos más claro)
+    -  *Text-muted*: ```rgb(173, 127, 102)``` 
+  
 - **Tipografías:** 
   - *Títulos y Código*: Space Mono o JetBrains Mono.
   - *Cuerpo de Texto*: Roboto o Inter.
-- **Iconografía:** Mencionar librería utilizada (ej. FontAwesome) y confirmar el uso de avatares/IA
+- **Iconografía:** Librería utilizada Tabler Icons: [Link al CDN](https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css)
+
+- **Avatares:** Se decide el uso de avatares/IA
 para privacidad.
 
 ## JavaScript
-- Indicar las funciones dinámicas implementadas en la portada y en cada página individual,
-describiendo brevemente qué hacen y en qué sección se encuentran.
-- Incluyendo capturas de pantalla.
-- Enlace al Proyecto Desplegado
-- Indicar el link de publicación en Vercel.
+- [Funciones dinámicas utilizadas en las páginas](./docs/funcionesJS.md)
+Descripción breve de cada una de las funciones utilizadas en el proyecto, incluye capturas de pantalla. 
+
+
 
 ## Uso de IA
 
-Detallar las herramientas de Inteligencia Artificial utilizadas en el proceso:
+A continuación se detalla las herramientas de Inteligencia Artificial utilizadas en el proceso:
 
-- **Herramientas:** Listado de aplicación y modelos usados (ej. Gemini, ChatGPT, Copilot).
-- **Uso en Contenido y Código:** Explicar qué textos se generaron y en qué problemas de lógica o
-debugging de JS/CSS ayudó la IA.
-- **Imágenes:** Especificar el modelo y criterio de prompt para los avatares/ilustraciones.
-- *Nota:* Se evaluará la capacidad del equipo para integrar la IA como asistente técnico y creativo,
-manteniendo la autoría del proyecto.
+### Herramientas:
+ Listado de aplicaciones y modelos usados:
+  - Gemini, 
+  - ChatGPT, 
+  - NanoBanana.
+  
+### Uso en Contenido y Código: 
+  Utilizamos un Agente creado en **GEMINI** que cumple el rol de capacitador en programación, cuya finalidad es ayudarnos a aprender y comprender lo que estamos codificando. 
+  
+  El principal problema de lógica que se presentó fue al intentar llamar elementos que aún el sistema no renderizaba. Para lo cual nos sugerió el uso de una función que llamamos init dentro de un escuchador de eventos.
+
+```document.addEventListener('DOMContentLoaded', init);```
+
+Lo cual garantizó lo siguiente:
+
+- **Sincronización**: JavaScript espera a que el navegador termine de leer todo el HTML.
+- **Orden de Carga**: Primero traemos los componentes externos (Navbar, Footer) y, solo cuando están presentes, activamos su interactividad (menú hamburguesa, tooltips).
+- **Prevención de Errores**: Eliminamos los errores de tipo null porque garantizamos que los IDs que busca el script ya están dibujados en la pantalla.
+
+- **Imágenes:** Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones. 
+  - [Modelo y criterio de prompt](./docs/prompt.md)
 
 
-IMPORTANTE: Al igual que la bitácora, el archivo README.md debe ser ampliado y actualizado
-en los dos TP siguientes, incorporando información relevante sobre la evolución del proyecto,
-incluyendo mejoras, cambios realizados y capturas de pantalla que muestren su progreso.
-Requerimiento obligatorio: Uso de IA
+
 
 

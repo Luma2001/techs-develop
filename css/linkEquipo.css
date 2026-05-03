@@ -1,0 +1,41 @@
+/* Contenedor principal de los compañeros */
+.grid-equipo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacio entre cada compañero */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* La tarjeta individual (el enlace <a>) */
+.card-miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Quitamos el subrayado azul */
+    color: var(--color-texto-principal); /* Usamos tus variables */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.card-miembro:hover {
+    transform: translateY(-5px); /* Se eleva un poquito */
+    filter: brightness(1.2); /* Brilla ligeramente */
+}
+
+/* Estilo de la foto mini */
+.foto-mini {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* La hace circular */
+    object-fit: cover; /* Evita que la foto se estire */
+    border: 2px solid var(--color-acento-primario);
+    margin-bottom: 10px;
+}
+
+.card-miembro span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

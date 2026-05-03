@@ -6,7 +6,7 @@
     <title>Perfil | Full-Stack Roaster</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="./js/fsr.js" defer></script>
+    <script type="module" src="./js/dsc.js" defer></script>
 </head>
 
 <body class="profile-body">
@@ -21,7 +21,7 @@
                     <a href="index.html" class="back-link"> >> exit_system</a>
                 </div>
                 <div class="header-right">
-                    <span class="system-tag">LUMA BLEND MAKER // ROASTER_V2.0</span>
+                    <span class="system-tag">DANY DEPLOY KEEPER // SUPPLY_V2.0</span>
                 </div>  
             </div>
 
@@ -29,22 +29,22 @@
                 
                 <div class="photo-section">
                     <div class="photo-frame">
-                        <img src="img/fsr.png" alt="Luma Blend Maker" class="profile-img">
+                        <img src="img/devops-supply.jpg" alt="Dany Deploy Keeper" class="profile-img">
                     </div>
-                    <h1>Luma</h1>
-                    <p class="role-title">Full-Stack Roaster</p>
+                    <h1>Dany</h1>
+                    <p class="role-title">DevOps Supply Chain Manager</p>
                     
                     <div class="roast-controls">
-                        <button id="btn-preparar" class="btn-roast"> >> Preparar mi blend </button>
+                        <button id="btn-preparar" class="btn-roast"> >> Activar flujo de café y código </button>
                         
                         <div class="coffee-stats-mini">
                             <div class="stat-item">
-                                <label>PREPARADOS:</label>
-                                <span id="count-preparadas">0</span><p> tazas de café y sumando...</p>
+                                <label>CODES:</label>
+                                <span id="count-preparadas">0</span><p> flujos de café y códigos...</p>
                             </div>
                             <div class="stat-item">
-                                <label>SERVIDOS:</label>
-                                <span id="count-servidas">0</span><p> bugs resueltos y servidos...</p>
+                                <label>DEPLOY:</label>
+                                <span id="count-servidas">0</span><p> deploys activos...</p>
                             </div>
                         </div>
                     
@@ -54,23 +54,23 @@
                 <div class="info-section">
                     <div class="info-group">
                         <label>MI RECETA DE CÓDIGO:</label>
-                        <p>Mi receta mezcla la intensidad del backend con la frescura del frontend. Como un blend de autor, combina estructura, lógica e interacción.</p>
+                        <p>Mi receta se basa en mantener la barra en funcionamiento: código ordenado, despliegues cuidados y un flujo constante para que el proyecto no se detenga. Como en una cafetería bien organizada, cada paso debe llegar a tiempo y sin cortar el servicio.</p>
                     </div>
                     <div class="info-group">
                         <label>INGREDIENTES TÉCNICOS (SKILLS):</label>
                         <ul class="skill-tags">
-                            <li>Frontend Fresco</li>
-                            <li>Backend Tostado</li>
-                            <li>JS (El Conector)</li>
-                            <li>Responsive Sips</li>
-                            <li>GitHub Bar</li>
+                            <li>GitHub</li>
+                            <li>Deploy</li>
+                            <li>Vercel</li>
+                            <li>Flujo de trabajo</li>
+                            <li>Control de Versiones</li>
                         </ul>                       
                     </div>
 
                     <div class="info-group">
                         <label>MI FORMA DE TRABAJAR:</label>
-                        <p>Busco el punto justo: que nada quede crudo (sin lógica) ni quemado (código bloqueante). La conexión estable es mi especialidad.</p>
-                        <button id="btn-servir" class="btn-roast secondary"> >> Servir blend full-stack </button>
+                        <p>Me gusta pensar el proyecto como una cafetería en pleno movimiento: para que cada pedido salga bien, no pueden faltar granos, leche, vasos, agua ni una máquina funcionando. En el mundo del código pasa algo parecido: el equipo necesita archivos ordenados, versiones cuidadas, un repo claro y un camino seguro para publicar el sitio.</p>
+                        <button id="btn-servir" class="btn-roast secondary"> >> Activar la barra online </button>
                     </div>
                 </div>
             </div>
@@ -79,36 +79,30 @@
                 <div class="list-box">
                     <h3>🎬 FILMS_LOG</h3>
                     <ul id="media-list">
-                        <li data-id="trek">☕ Stark Trek – Primer Contacto (1996)</li>
-                        <li data-id="suenos">☕ El campo de los Sueños (1989)</li>
-                        <li data-id="michael">☕ Michael (1996)</li>
-                        <li data-id="vida">☕ Qué bello es vivir (1946)</li>
+                        <li data-id="mib3">☕ Hombres de Negro 3 (2012) 🐾</li>
+                        <li data-id="marley">☕ Marley y Yo (2008) 🐾</li>
+                        <li data-id="hachiko">☕ Hachiko (2009) 🐾</li>
+                        <li data-id="wick">☕ John Wick (2014) 🐾</li>
                     </ul>
                 </div>
+
                 <div class="list-box"> 
                     <h3>💿 DISCS_DRIVE</h3>
                     <ul id="audio-list">
-                        <li data-id="dire">☕ Sultans of swing The very best of Dire Straits</li>
-                        <li data-id="alicia">☕ As I am Alicia Keys</li>
-                        <li data-id="queen">☕ Greatest Hits III Queen</li>
-                        <li data-id="beatles">☕ Abbey Road The Beatles</li>
+                        <li data-id="animals">☕ Animals - Pink Floyd 🎸</li>
+                        <li data-id="abbey">☕ Abbey Road - The Beatles 🎸</li>
+                        <li data-id="pet-sounds">☕ Pet Sounds - The Beach Boys 🎸</li>
+                        <li data-id="nevermind">☕ Nevermind - Nirvana 🎸</li>
                     </ul>
                 </div>
                 <div id="barista-tooltip" class="tooltip-hidden"></div> <!--Contenedor invisible para el tooltip-->
             </div>
 
             <div class="card-footer">
-                <p>"Encargada de manejar el fuego del servidor y la frescura del frontend en una sola taza."</p>
+                <p>"Encargado de que la cafetería digital nunca se quede sin granos, leche, vasos ni código listo para servir. Cuido el flujo del proyecto y me aseguro de que la página pueda publicarse sin interrupciones. Si Vercel se cae, ya tengo el molinillo manual preparado."</p>
             </div>
         </div>
     </main>
-
-    <!-- ENLACES DEL EQUIPO -->
-    <section class="seccion-equipo-links">
-        <h3>Conoce al resto del equipo</h3>
-        <!-- Este div es el que usará JS para inyectar los enlaces -->
-        <div id="otros-miembros-container" class="grid-equipo"></div>
-    </section>
 
     <!-- MODAL DE TERMINAL (Invisible por defecto) -->
     <div id="terminal-modal" class="terminal-overlay">

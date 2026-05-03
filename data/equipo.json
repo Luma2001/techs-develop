@@ -1,0 +1,8 @@
+{
+  "miembros": [
+    { "id": "luma", "nombre": "LUMA", "foto": "img/fsr.png" },
+    { "id": "dani", "nombre": "DANI", "foto": "img/devops-supply.jpg" },
+    { "id": "naty", "nombre": "NATY", "foto": "img/qa-tester.jpeg" },
+    { "id": "lean", "nombre": "LEAN", "foto": "img/backend-dev.png" }
+  ]
+}
