@@ -29,6 +29,14 @@ export const utils = {
                 }
             });
         }
+
+        // Listener para cuando cambia el hash (navegación dentro de index.html)
+        if (!window._hashChangeListenerAdded) {
+            window.addEventListener("hashchange", () => {
+                this.updateActiveLink();
+            });
+            window._hashChangeListenerAdded = true;
+        }
     },//fin initializeNavbar
 
     actualizarRelog(){
@@ -47,7 +55,34 @@ export const utils = {
         const text = await response.text();
         document.getElementById("navbar-container").innerHTML = text;
         this.initializeNavbar(); // Inicializar el navbar después de cargarlo
+        this.updateActiveLink(); // Marcar el enlace activo
     },//fin loadNavbar
+
+    updateActiveLink: function() {
+        const navItems = document.querySelectorAll(".nav-links li");
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentHash = window.location.hash || '#runtime';
+
+        // Remover clase active de todos
+        navItems.forEach(item => item.classList.remove("active"));
+
+        // Determinar cuál debe estar activo
+        navItems.forEach(item => {
+            const link = item.querySelector("a");
+            if (!link) return;
+
+            const href = link.getAttribute("href");
+
+            // Si estamos en bitacora.html
+            if (currentPage === "bitacora.html" && href === "bitacora.html") {
+                item.classList.add("active");
+            }
+            // Si estamos en index.html (o página raíz)
+            else if ((currentPage === "index.html" || currentPage === "") && href.includes(currentHash)) {
+                item.classList.add("active");
+            }
+        });
+    },//fin updateActiveLink
 
     loadFooter: async function() {
         const response = await fetch("./footer.html");
