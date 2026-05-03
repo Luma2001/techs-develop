@@ -107,7 +107,30 @@ export const utils = {
         }
     },//fin toggleTooltip
 
+    renderOtrosMiembros: async function(idActual) {
+        const container = document.getElementById("otros-miembros-container");
+        if (!container) return; // Si no existe el contenedor, no hace nada
 
+        try {
+            // Traemos los datos de los 4 integrantes
+            const response = await fetch('./data/equipo.json');
+            const data = await response.json();
 
+            // FILTRO: Excluimos a la persona de la ficha actual
+            const otros = data.miembros.filter(m => m.id !== idActual);
+
+            // Generamos el HTML para los 3 restantes
+            container.innerHTML = otros.map(m => `
+                <a href="${m.id}.html" class="card-miembro">
+                    <img src="${m.foto}" alt="${m.nombre}" class="foto-mini">
+                    <span>${m.nombre}</span>
+                </a>
+            `).join('');
+
+        } catch (error) {
+            console.error("Error cargando compañeros:", error);
+        }
+    }//fin renderOtrosMiembros
+    
 }//fin utils
 

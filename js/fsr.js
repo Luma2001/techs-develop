@@ -16,7 +16,8 @@ async function init() {
     utils.actualizarRelog();
     setInterval(utils.actualizarRelog, 1000);
 
-    
+    //llamamos a la función para cargar los enlaces del equipo
+    await utils.renderOtrosMiembros('luma');
 
     //Cargamos localStorage
     let preparadas = Number(localStorage.getItem('luma_preparadas')) || 0;
