@@ -43,7 +43,7 @@ La propuesta consiste en presentar al equipo bajo una identidad híbrida: una Ag
 │   └── index.js 
 ├── footer.html 
 ├── full-stack-roaster.html
-├── qa.html
+├── qa-taster-frontend-latte-artist.html
 ├── navbar.html
 ├── index.html
 └── README.md
@@ -97,8 +97,28 @@ Lo cual garantizó lo siguiente:
 - **Orden de Carga**: Primero traemos los componentes externos (Navbar, Footer) y, solo cuando están presentes, activamos su interactividad (menú hamburguesa, tooltips).
 - **Prevención de Errores**: Eliminamos los errores de tipo null porque garantizamos que los IDs que busca el script ya están dibujados en la pantalla.
 
-- **Imágenes:** Se utilizo NanoBanana y ChatGPT para los avatares e ilustraciones. 
-  - [Modelo y criterio de prompt](./docs/prompt.md)
+### Uso en recursos visuales
+
+Avatares: Se utilizó IA para generar los avatares de los integrantes. El objetivo fue construir una estética visual coherente con la identidad general de The Coffee-Code Engine, combinando el universo de la cafetería de especialidad con el mundo del desarrollo web.
+
+Para ello se trabajó con prompts orientados a generar ilustraciones de estilo caricatura digital/3D, manteniendo ciertos rasgos de cada integrante y sumando elementos representativos del proyecto, como delantales de barista, tazas, notebooks, herramientas tecnológicas y detalles vinculados al café.
+
+Las imágenes generadas por IA fueron luego seleccionadas, revisadas y ajustadas por el equipo para asegurar coherencia visual entre los perfiles.
+
+Herramientas utilizadas: ChatGPT y NanoBanana
+
+Logo: Se utilizó IA para generar propuestas visuales del logo del proyecto, buscando representar la unión entre café y programación mediante un grano de café enmarcado por signos de código < >, con una estética simple, moderna y coherente con la identidad visual general.
+
+Herramientas utilizadas: ChatGPT
+
+Notas de cata para películas y discos: Se utilizó IA para generar ideas de textos breves para las secciones de películas y discos. El objetivo fue crear descripciones con formato de “notas de cata”, relacionando cada obra con el mundo del café y con la estética dev del proyecto.
+
+Luego, los textos fueron revisados y adaptados por el equipo para que mantuvieran coherencia con cada perfil y con el tono general de la propuesta.
+
+Herramientas utilizadas: ChatGPT
+
+Los prompts base utilizados para avatares, logo y notas de cata se documentan en [prompt.md](./docs/prompt.md).
+
 
 
 
