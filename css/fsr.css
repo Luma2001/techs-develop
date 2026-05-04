@@ -277,7 +277,7 @@ label {
   overflow-y: auto;
   font-family: var(--font-titulos);
   color: var(--color-acento-secundario);
-  font-size: 1.4rem; /* Basado en tu 10px base */
+  font-size: 1.4rem; 
 }
 
 .terminal-body p {
